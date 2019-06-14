@@ -1,9 +1,9 @@
 /*!
-Theme Name: Starts With Me
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Franklin, Jonathan, Karla, Nate
+Author: RED Academy
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for Starts With Me Community project.
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -670,3 +670,28 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.Contact-Us {
+  background-color: #fffefa; }
+
+footer {
+  width: 100%;
+  height: 240px;
+  background-color: #20bed4;
+  color: #fffefa;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 50% 25%; }
+
+.social-icons {
+  grid-column-start: 2;
+  font-size: 20px; }
+
+.phone {
+  grid-column-start: 1; }
+
+.warning {
+  grid-row-start: 2; }
+
+.copyright {
+  grid-column: 2;
+  grid-row: 3; }
