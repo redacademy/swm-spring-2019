@@ -26,6 +26,13 @@
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
+				
+				<article class="nav-logo">
+						<!-- Need to change image with starts with me logo when we get image from Mike -->
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<img  src= "<?php echo get_template_directory_uri() . '/images/temp.jpg'; ?>" class="logo" alt="Starts With Me Inc Logo" > </a>
+				</article>
+
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
@@ -34,3 +41,5 @@
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
+
+			
