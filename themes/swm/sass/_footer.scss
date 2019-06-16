@@ -4,40 +4,99 @@ footer{
     height: 240px;
     background-color: #20bed4;
     color: #fffefa;
-    
+    display: flex;
 
+    .site-info{
+    flex-direction: row;
+    text-align: center;
+
+    .phone{
+        font-size: 12px;
+        margin-top: 8%;  
+    }
+
+    .warning{
+        font-size: 11px;
+    }
+
+    .copyright{
+        font-size: 12px;  
+        margin-top: 7%;
+    }
+
+    .social-icons{
+        font-size: 14px;
+        color: #fffefa;
+        a{
+            text-decoration: none;
+            color: #fffefa;
+            margin-right: 3.5%;
+        }
+    }
+
+    } // End of Mobile
+
+
+
+    @media only screen and (min-width: 600px) {
+
+        .site-info{
+        .phone{
+            font-size: 14px;
+            margin-top: 2%;  
+        }
+        
+        .warning{
+            font-size: 12px;
+        }
+    
+        .copyright{
+            font-size: 12px;  
+            margin-top: 6%;
+        }
+    
+        .social-icons{
+            font-size: 16px;
+            color: #fffefa;
+            a{
+                text-decoration: none;
+                color: #fffefa;
+                margin-right: 3.5%;
+            }
+        }
+    }
+
+} //End of Tablet
+
+
+
+    @media only screen and (min-width: 1200px) {
+
+        display: block;
+   
     .site-info{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 60px 120px 60px;
     }
 
-
-
-}
-
-
-
     .social-icons{
         grid-column-start: 2;
         font-size: 20px;
         color: #fffefa;
-        margin-left: 105px;
-        
-        
+        margin-left: 105px; 
         a{
             text-decoration: none;
             color: #fffefa;
-            margin-right: 3.5%;
-
-        
+            margin-right: 3.5%;        
         }
-
     }
+
 
     .phone{
         grid-column-start: 1;
-        margin-left: 129px;
+        text-align: start;
+        margin-left: 147px;
     }
 
     .warning{
@@ -54,5 +113,6 @@ footer{
         margin-top: 10%;
         margin-left: 60px;
     }
+} //End of Desktop
 
-
+}  // Footer
