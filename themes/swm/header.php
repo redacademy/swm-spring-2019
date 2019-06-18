@@ -27,13 +27,14 @@
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
 
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+
 				<article class="nav-logo">
 						<!-- Need to change image with starts with me logo when we get image from Mike -->
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<img  src= "<?php echo get_template_directory_uri() . '/images/temp.jpg'; ?>" class="logo" alt="Starts With Me Inc Logo" > </a>
+				<img  src= "<?php echo get_template_directory_uri() . '/images/SWM_RGB.png'; ?>" class="logo" alt="Starts With Me Inc Logo" > </a>
 				</article>
-
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+				
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
