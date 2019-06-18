@@ -1,0 +1,57 @@
+
+
+.Contact-Us {
+      background-color: #fffefa;
+  }
+
+  form{
+      width: 399px; 
+      margin-left: 300px;
+  }
+
+  input[type=email], input[type=password], input[type=search], input[type=text], input[type=url]{
+      border: 2px solid #ccc;
+      padding: 10px;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background-color: #fffefa;
+  }
+
+ textarea{  
+      max-height: 141px;
+      background-color: #fffefa;
+    }
+
+  input[type=submit]{
+      width: 89px;
+      height: 40px;
+      border-radius: 15px;
+      background-color: #fc9f66;
+      border: none;
+      box-shadow: none;
+      font-family: AvenirNext;
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffffff;
+      margin-left: 79%;
+  }
+ 
+  h1{
+      font-family: AvenirNext;
+      font-size: 50px;
+      font-weight: bold;
+      color: #4e4949;
+      width: 481px;
+      margin-left: 129px;
+  }
+  
+  h2{
+      font-family: AvenirNext;
+      font-size: 26px;
+      font-weight: bold;
+      color: #4e4949;
+      margin-left: 130px;
+  }
+
+
