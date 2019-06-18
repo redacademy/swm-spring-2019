@@ -52,7 +52,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .logo {
   width: 104px;
-  height: 64px; }
+  height: 64px;
+  position: absolute; }
 
 #menu-item-40 a {
   color: #fffefa !important;
@@ -526,6 +527,13 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.menu-main-menu-container {
+  margin-left: 318px; }
+
+.main-navigation a {
+  margin-top: 5px;
+  margin-left: 17px; }
 
 /*--------------------------------------------------------------
 # Accessibility
