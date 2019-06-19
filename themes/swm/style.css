@@ -704,16 +704,47 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Front page */
-.Contact-Us {
-  background-color: #fffefa; }
+ol {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 10em;
+  padding: 0;
+  counter-reset: li-counter; }
 
-form {
+ol > li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 0.5em;
+  min-height: 3em;
+  font-family: AvenirNext;
+  font-size: 18px;
+  font-weight: 500;
+  color: #363636; }
+
+ol > li:before {
+  position: absolute;
+  top: 0;
+  left: -1em;
+  width: 0.8em;
+  font-size: 2.5em;
+  line-height: .6;
+  font-family: AvenirNext;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: right;
+  color: #f39e65;
+  content: counter(li-counter);
+  counter-increment: li-counter; }
+
+.form {
   width: 399px;
-  margin-left: 300px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contactForm {
+  margin-left: 103px;
+  margin-top: 220px; }
 
 input[type=email], input[type=password], input[type=search], input[type=text], input[type=url] {
   border: 2px solid #ccc;
@@ -756,6 +787,15 @@ h2 {
   color: #4e4949;
   margin-left: 130px; }
 
+.entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* Front page */
 footer {
   width: 100%;
   height: 240px;
