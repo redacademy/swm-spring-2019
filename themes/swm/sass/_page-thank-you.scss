@@ -1,0 +1,77 @@
+.typ{
+
+    .entry-content{
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center; 
+
+ }
+
+
+ section img{
+     display: none;
+ }
+
+ 
+        // background-image: url("../../images/peace_cmyk.png");
+        // background-repeat: no-repeat;
+        // background-size: 393px 427px;
+        // background-image: linear-gradient(#004092, #020202, transparent)
+        // background: linear-gradient($color__background-ins, $color__background-ins, transparent), url("../../images/peace_cmyk.png")
+    //    .backgroundImage{
+
+        // background: url("../../images/peace_cmyk.png");
+        // background-repeat: no-repeat;
+        // background-size: 350px;
+       
+    //    }
+   
+  
+
+    h3{
+        font-size: 18px;
+        font-family: AvenirNext-Regular;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 14px;
+        font-family: AvenirNext-Regular;
+        text-align: center;
+    }
+
+    .wp-block-button{
+        display: flex;
+    }
+    .wp-block-button__link{
+        background-color: #f39e65;
+        width: 196px;
+        height: 40px;
+        justify-content: center;
+        padding: 6px;
+     
+    }
+
+ 
+    @media only screen and (min-width: 1200px) {
+        h3{
+            font-size: 30px;
+        }
+
+        h4{
+            font-size: 20px;
+        }
+
+        section img{
+            display: inline;
+            opacity: .35;
+            z-index: -1;
+            margin-left: -32%;
+            margin-top: -33px;
+            position: absolute;
+        }
+      }
+
+}
