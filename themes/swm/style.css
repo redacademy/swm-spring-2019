@@ -43,6 +43,35 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+.menu-btn div {
+  position: absolute;
+  left: 100%;
+  top: 64%;
+  padding-right: 8px;
+  margin-top: -0.50em;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 200;
+  vertical-align: middle;
+  z-index: 99; }
+
+.menu-btn span {
+  display: block;
+  width: 19px;
+  height: 3px;
+  margin: 4px 0;
+  background: black;
+  z-index: 99; }
+
+.responsive-menu {
+  display: none; }
+
+.expand {
+  display: block !important; }
+
+.mobile-nav {
+  margin-left: 225px; }
+
 .site-content {
   background-color: #fffefa; }
 
@@ -54,12 +83,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 104px;
   height: 64px;
   position: absolute; }
-
-#menu-item-40 a {
-  color: #fffefa !important;
-  font-family: AvenirNext;
-  font-size: 18px;
-  font-weight: 600; }
 
 html {
   font-family: sans-serif;
@@ -437,6 +460,20 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
+.responsive-menu {
+  max-height: 0;
+  background: #999999;
+  width: 300px;
+  overflow: hidden;
+  -webkit-transition: all .25s;
+  transition: all .25s; }
+
+.expand {
+  max-height: 300px; }
+
+nav button, input[type=button], input[type=reset], input[type=submit] {
+  margin-left: 275px; }
+
 a {
   color: royalblue; }
   a:visited {
@@ -481,7 +518,7 @@ a {
   .main-navigation li {
     float: left;
     position: relative;
-    margin-right: 80px; }
+    margin-right: 50px; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -496,18 +533,8 @@ a {
     display: none; }
   .main-navigation ul {
     display: inline; }
-  .menu:last-child {
-    color: #fffefa;
-    font-family: AvenirNext;
-    font-size: 18px;
-    font-weight: 600; }
   .menu li a {
-    color: black; }
-  #menu-item-40 {
-    width: 121px;
-    height: 40px;
-    border-radius: 15px;
-    background-color: #fc9f66; } }
+    color: black; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -529,11 +556,23 @@ a {
   width: 50%; }
 
 .menu-main-menu-container {
-  margin-left: 318px; }
+  margin-left: 180px; }
 
 .main-navigation a {
   margin-top: 5px;
   margin-left: 17px; }
+
+#primary-menu li:nth-last-child(1) {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #fc9f66; }
+
+#primary-menu li:nth-last-child(1) a {
+  color: #fffefa;
+  font-family: AvenirNext;
+  font-size: 18px;
+  font-weight: 600; }
 
 /*--------------------------------------------------------------
 # Accessibility
