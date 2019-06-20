@@ -1,0 +1,57 @@
+.typ{
+
+    .entry-content{
+        display: flex;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        align-items: center; 
+ }
+
+ section img{
+     display: none;
+ }
+
+    h3{
+        font-size: 18px;
+        font-family: AvenirNext-Regular;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 14px;
+        font-family: AvenirNext-Regular;
+        text-align: center;
+    }
+
+    .wp-block-button{
+        display: flex;
+    }
+    .wp-block-button__link{
+        background-color: #f39e65;
+        width: 196px;
+        height: 40px;
+        justify-content: center;
+        padding: 6px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        h3{
+            font-size: 30px;
+        }
+
+        h4{
+            font-size: 20px;
+        }
+
+        section img{
+            display: inline;
+            opacity: .35;
+            z-index: -1;
+            margin-left: -32%;
+            position: absolute;
+        }
+      }
+
+
+}
