@@ -35,6 +35,13 @@
 
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+
+				<article class="nav-logo">
+						<!-- Need to change image with starts with me logo when we get image from Mike -->
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<img  src= "<?php echo get_template_directory_uri() . '/images/SWM_RGB.png'; ?>" class="logo" alt="Starts With Me Inc Logo" > </a>
+				</article>
+				
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 			</header><!-- #masthead -->
  

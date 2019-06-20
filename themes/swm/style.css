@@ -52,7 +52,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .logo {
   width: 104px;
+
   height: 64px; }
+
+  height: 64px;
+  position: absolute; }
+
+#menu-item-40 a {
+  color: #fffefa !important;
+  font-family: AvenirNext;
+  font-size: 18px;
+  font-weight: 600; }
 
 html {
   font-family: sans-serif;
@@ -473,7 +483,8 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    margin-right: 80px; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -481,13 +492,25 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block; }
+  display: inline; }
 
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
-    display: block; } }
+    display: inline; }
+  .menu:last-child {
+    color: #fffefa;
+    font-family: AvenirNext;
+    font-size: 18px;
+    font-weight: 600; }
+  .menu li a {
+    color: black; }
+  #menu-item-40 {
+    width: 121px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #fc9f66; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -507,6 +530,13 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.menu-main-menu-container {
+  margin-left: 318px; }
+
+.main-navigation a {
+  margin-top: 5px;
+  margin-left: 17px; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -677,12 +707,156 @@ object {
 .gallery-caption {
   display: block; }
 
+ol {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 10em;
+  padding: 0;
+  counter-reset: li-counter; }
+
+ol > li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 0.5em;
+  min-height: 3em;
+  font-family: AvenirNext;
+  font-size: 18px;
+  font-weight: 500;
+  color: #363636; }
+
+ol > li:before {
+  position: absolute;
+  top: 0;
+  left: -1em;
+  width: 0.8em;
+  font-size: 2.5em;
+  line-height: .6;
+  font-family: AvenirNext;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: right;
+  color: #f39e65;
+  content: counter(li-counter);
+  counter-increment: li-counter; }
+
+.form {
+  width: 399px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contactForm {
+  margin-left: 103px;
+  margin-top: 220px; }
+
+input[type=email], input[type=password], input[type=search], input[type=text], input[type=url] {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #fffefa; }
+
+textarea {
+  max-height: 141px;
+  background-color: #fffefa; }
+
+input[type=submit] {
+  width: 89px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #fc9f66;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-family: AvenirNext;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 79%; }
+
+h1 {
+  font-family: AvenirNext;
+  font-size: 50px;
+  font-weight: bold;
+  color: #4e4949;
+  width: 481px;
+  margin-left: 129px; }
+
+h2 {
+  font-family: AvenirNext;
+  font-size: 26px;
+  font-weight: bold;
+  color: #4e4949;
+  margin-left: 130px; }
+
+.entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+
 .Contact-Us {
   background-color: #fffefa; }
+
+.typ .entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.typ section img {
+  display: none; }
+
+.typ h3 {
+  font-size: 18px;
+  font-family: AvenirNext-Regular;
+  text-align: center; }
+
+.typ h4 {
+  font-size: 14px;
+  font-family: AvenirNext-Regular;
+  text-align: center; }
+
+.typ .wp-block-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.typ .wp-block-button__link {
+  background-color: #f39e65;
+  width: 196px;
+  height: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 6px; }
+
+@media only screen and (min-width: 1200px) {
+  .typ h3 {
+    font-size: 30px; }
+  .typ h4 {
+    font-size: 20px; }
+  .typ section img {
+    display: inline;
+    opacity: .35;
+    z-index: -1;
+    margin-left: -32%;
+    margin-top: -33px;
+    position: absolute; } }
+
 
 footer {
   width: 100%;
