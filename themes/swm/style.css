@@ -286,25 +286,29 @@ table {
   height: 64px;
   position: absolute; }
 
-.searchsection .search-form {
-  width: 200px;
-  border: none;
-  margin-left: 80%; }
-  .searchsection .search-form .search-submit {
-    background-color: #fffefa;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    border: none;
-    margin: 0; }
+.searchsection {
+  display: none; }
 
-.searchsection .search-field {
-  border-right: none;
-  border-left: none;
-  border-top: none;
-  width: 120px; }
-
-.searchsection fieldset {
-  border: none; }
+@media only screen and (min-width: 1200px) {
+  .searchsection {
+    display: inline; }
+    .searchsection .search-form {
+      width: 200px;
+      border: none;
+      margin-left: 80%; }
+      .searchsection .search-form .search-submit {
+        background-color: #fffefa;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border: none;
+        margin: 0; }
+    .searchsection .search-field {
+      border-right: none;
+      border-left: none;
+      border-top: none;
+      width: 120px; }
+    .searchsection fieldset {
+      border: none; } }
 
 /*--------------------------------------------------------------
 # Embedded Fonts
@@ -573,7 +577,7 @@ a {
 .main-navigation.toggled ul {
   display: inline; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1020px) {
   .menu-toggle {
     display: none; }
   .main-navigation ul {
