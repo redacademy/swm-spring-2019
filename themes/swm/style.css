@@ -43,6 +43,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/*****
+How to call a Mixins?
+If you want to call the mixins below:
+		@mixin center-block {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+You just have to do this:
+.box{
+	@include center-block();
+}
+
+
+****/
 .site-content {
   background-color: #fffefa; }
 
@@ -52,9 +67,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 .logo {
   width: 104px;
-
-  height: 64px; }
-
   height: 64px;
   position: absolute; }
 
@@ -246,6 +258,90 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Avenir-Next-Heavy-Italic';
+  src: url("../../fonts/AvenirNext/AvenirNext-HeavyItalic.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-HeavyItalic.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-HeavyItalic.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-HeavyItalic.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-HeavyItalic.svg#AvenirNext-HeavyItalic") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir-Next-Italic';
+  src: url("../../fonts/AvenirNext/AvenirNext-Italic.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-Italic.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-Italic.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-Italic.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-Italic.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-Italic.svg#AvenirNext-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir-Next-Ultra-Light-Italic';
+  src: url("../../fonts/AvenirNext/AvenirNext-UltraLightItalic.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-UltraLightItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-UltraLightItalic.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-UltraLightItalic.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-UltraLightItalic.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-UltraLightItalic.svg#AvenirNext-UltraLightItalic") format("svg");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir-Next-Medium-Italic';
+  src: url("../../fonts/AvenirNext/AvenirNext-MediumItalic.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-MediumItalic.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-MediumItalic.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-MediumItalic.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-MediumItalic.svg#AvenirNext-MediumItalic") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir-Next-Demi-Bold-Italic';
+  src: url("../../fonts/AvenirNext/AvenirNext-DemiBoldItalic.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-DemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-DemiBoldItalic.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-DemiBoldItalic.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-DemiBoldItalic.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-DemiBoldItalic.svg#AvenirNext-DemiBoldItalic") format("svg");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir-Next-Regular';
+  src: url("../../fonts/AvenirNext/AvenirNext-Regular.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-Regular.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-Regular.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-Regular.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-Regular.svg#AvenirNext-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir-Next-Heavy';
+  src: url("../../fonts/AvenirNext/AvenirNext-Heavy.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-Heavy.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-Heavy.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-Heavy.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-Heavy.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-Heavy.svg#AvenirNext-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir-Next-Demi-Bold';
+  src: url("../../fonts/AvenirNext/AvenirNext-DemiBold.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-DemiBold.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-DemiBold.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-DemiBold.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-DemiBold.svg#AvenirNext-DemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir-Next-Ultra-Light';
+  src: url("../../fonts/AvenirNext/AvenirNext-UltraLight.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-UltraLight.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-UltraLight.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-UltraLight.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-UltraLight.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-UltraLight.svg#AvenirNext-UltraLight") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir-Next-Medium';
+  src: url("../../fonts/AvenirNext/AvenirNext-Medium.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-Medium.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-Medium.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-Medium.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-Medium.svg#AvenirNext-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir-Next-Bold-Italic';
+  src: url("../../fonts/AvenirNext/AvenirNext-BoldItalic.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-BoldItalic.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-BoldItalic.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-BoldItalic.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-BoldItalic.svg#AvenirNext-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir-Next-Bold';
+  src: url("../../fonts/AvenirNext/AvenirNext-Bold.eot");
+  src: url("../../fonts/AvenirNext/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/AvenirNext/AvenirNext-Bold.woff2") format("woff2"), url("../../fonts/AvenirNext/AvenirNext-Bold.woff") format("woff"), url("../../fonts/AvenirNext/AvenirNext-Bold.ttf") format("truetype"), url("../../fonts/AvenirNext/AvenirNext-Bold.svg#AvenirNext-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -255,7 +351,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Avenir-Next-Medium";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -799,10 +895,6 @@ h2 {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-
-.Contact-Us {
-  background-color: #fffefa; }
-
 .typ .entry-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,9 +946,7 @@ h2 {
     opacity: .35;
     z-index: -1;
     margin-left: -32%;
-    margin-top: -33px;
     position: absolute; } }
-
 
 footer {
   width: 100%;
