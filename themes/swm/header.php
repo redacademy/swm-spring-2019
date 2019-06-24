@@ -45,7 +45,7 @@
 				</article>
 				<?php wp_nav_menu(); ?>
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
-				</nav><!-- #site-navigation -->
+			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 
 		<div id="content" class="site-content">
