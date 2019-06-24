@@ -136,7 +136,7 @@ get_header(); ?>
 
                 <!-- End Loop -->
 
-                <?php include 'template-parts/phone-call.php'; ?>
+                
 
 
 
@@ -148,6 +148,6 @@ get_header(); ?>
 
         </div><!-- #content -->
     </div><!-- #primary -->
-
+    <?php include 'template-parts/phone-call.php'; ?>
 
     <?php get_footer(); ?>
