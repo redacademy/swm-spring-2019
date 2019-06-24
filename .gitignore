@@ -30,6 +30,7 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/startswithme_plugins/
+!plugins/wck-custom-fields-and-custom-post-types-creator/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
