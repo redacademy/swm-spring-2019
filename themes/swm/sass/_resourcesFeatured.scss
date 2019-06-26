@@ -1,0 +1,147 @@
+//test
+
+
+
+
+.resourcesFeaturedContainer,
+.resourcesVideoContainer,
+.resourcesPodcastsContainer,
+.resourcesBlogContainer {
+    display: none;
+}
+
+
+// BEGIN CSS FOR FEATURED RESOURCES
+
+
+
+// .resourcesContainer {
+//     width: 80%;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+// .resourcesFeaturedContainer {
+//     display: grid;
+   
+    
+//     grid-template-columns: 5.4fr 4fr;
+//     //   grid-template-rows: 2.87fr 1.6fr 1.6fr;
+//     grid-template-areas: "video podcasts"
+//         "videos ebook"
+//         "blogs ebook"
+//     ;
+
+//     .featuredVideoContainer {
+//         grid-area: video;
+//         background-color: red;
+
+//     }
+
+//     .featuredVideosContainer {
+//         background-color: pink;
+//         grid-area: videos;
+
+//         h5 {
+//             @include set-font-feat-titles-res;
+//         }
+
+//         .test {
+//             display: flex;
+//             justify-content: space-between;
+
+//             .singleFeaturedVideosContainer {
+//                 width: 25%;
+
+//                 iframe {
+//                     height: 101px;
+//                     border-radius: 25px;
+//                 }
+
+//             }
+
+
+//         }
+//     }
+
+//     .featuredBlogContainer {
+//         background-color: orange;
+//         grid-area: blogs;
+
+//         h5 {
+//             @include set-font-feat-titles-res;
+//         }
+
+//         .test2 {
+//             display: flex;
+//             justify-content: space-between;
+
+//             .singleFeaturedBlogContainer {
+//                 width: 25%;
+
+//                 a {
+//                     img {
+//                         height: 101px;
+//                         border-radius: 25px;
+//                     }
+//                 }
+
+//             }
+
+
+//         }
+//     }
+
+//     .featuredPodcastsContainer {
+//         background-color: green;
+//         grid-area: podcasts;
+//         margin-left: 75px;
+//             h5 {
+//                 @include set-font-feat-titles-res;
+//             }
+//     }
+
+//     .featuredEbookContainer {
+//         background-color: yellow;
+//         grid-area: ebook;
+//         margin-left: 75px;
+//             h5{
+//             @include set-font-feat-titles-res;
+//             }
+//             .singleFeaturedEbookContainer {
+//                     background-color: red;
+//                     display: flex;
+//                 a{
+//                     width: 50%;
+//                 img {
+//                     background-color: orange;
+//                     max-width: 100%;
+//                     max-height: 100%;
+//                 }
+//             }
+//                 p {
+//                     background-color: green;
+//                     padding: 40px 0;
+//                 }
+//             }
+//     }
+// }
+
+
+
+// END CSS FOR FEATURED PAGE
+
+
+//BEGIN CSS for EBOOKS
+
+.singleEbooksContainer {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    img {
+        grid-column: 1/2;
+    }
+    .ebooksMeta {
+        grid-column: 2/3;
+    }
+}

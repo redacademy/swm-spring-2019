@@ -13,6 +13,13 @@ get_header(); ?>
 		<div class="contactgrid">
 			<?php while (have_posts()) : the_post(); ?>
 
+			<?php
+                    global $post;
+                    $post_slug=$post->post_name;
+					$service = explode("-",$post_slug);
+					echo $service[0];
+                    ?>   
+
 				<?php get_template_part('template-parts/content', 'page'); ?>
 
 			<?php endwhile; 
