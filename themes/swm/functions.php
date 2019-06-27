@@ -90,7 +90,7 @@ function swm_customs_scripts()
 {
 	wp_enqueue_style('swm-style', get_stylesheet_uri());
 
-	$script_url = get_template_directory_uri() . '/build/js/main.min.js';	
+	$script_url = get_template_directory_uri() . '/build/js/main.min.js';
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('swm_main_script', $script_url, array('jquery'), false, true);
 	wp_enqueue_script('swm-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true);
@@ -106,7 +106,7 @@ add_action('wp_enqueue_scripts', 'swm_customs_scripts');
 
 function swm_external_css()
 {
-	wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css',false);
+	wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.8.2/css/all.css', false);
 
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
@@ -124,3 +124,22 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+
+
+//Add this function to allow or not specific types of files.
+function my_custom_mime_types($mimes)
+{
+
+	// New allowed mime types.
+	$mimes['svg'] = 'image/svg+xml';
+	$mimes['svgz'] = 'image/svg+xml';
+	$mimes['doc'] = 'application/msword';
+
+	// Optional. Remove a mime type.
+	unset($mimes['exe']);
+
+	return $mimes;
+}
+add_filter('upload_mimes', 'my_custom_mime_types');

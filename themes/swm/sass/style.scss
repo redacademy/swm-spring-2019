@@ -46,7 +46,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 
 // Imported but not included in the stylesheet.
-
+@import "reset";
 @import "variables";
 @import "mixins";
 
@@ -64,10 +64,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
-
 @import "footer";
-
 @import "contact";
 @import "thank-you";
-@import "reset";
-
+@import "front-page";
+@import "phone-call";
