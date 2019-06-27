@@ -46,13 +46,17 @@ get_header(); ?>
                     $services_query = new WP_Query($services_args);
                     while($services_query->have_posts()) : $services_query->the_post();
                     ?>
-                                
-                    <?php the_post_thumbnail( 'large' ); ?>
-                    
-                    <?php the_title(); ?>
-                    <?php the_excerpt(); ?>
-                    <a href="<?php the_permalink(); ?>">learn more &rarr;</a>
-
+                    <section class="service">
+                    <article class="services-featured-image">            
+                        <?php the_post_thumbnail( 'large' ); ?>
+                    </article>
+                    <article class="services-information">
+                        <h2><?php the_title(); ?></h2>
+                            <?php the_excerpt(); ?>
+                                <a href="<?php the_permalink(); ?>">learn more &rarr;</a>
+                    </article>
+                </section>
+                <hr />
                     <?php endwhile; ?>
 
                     <!-- End Loop -->
@@ -62,5 +66,5 @@ get_header(); ?>
             <?php endwhile; // End of the loop. ?>
         </main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php include 'template-parts/phone-call.php'; ?>
 <?php get_footer(); ?>

@@ -72,12 +72,8 @@ $txt_shad_black: 0 2px 4px rgba(0, 0, 0, 0.15);
 //3-Thank-you-page
 @mixin set-font-thank-you-title {
   font-family: $an_r;
-  font-size: 30px;
-}
-
-@mixin set-font-thank-you-confim-email {
-  font-family: $an_r;
-  font-size: 20px;
+	font-size: 30px;
+	line-height: normal;
 }
 
 //4-Contact-Us-page
@@ -150,6 +146,7 @@ $txt_shad_black: 0 2px 4px rgba(0, 0, 0, 0.15);
   font-size: 20px;
 }
 
+
 //Services & front-page
 @mixin set-font-main-title {
   font-family: $an_bold;
@@ -160,18 +157,26 @@ $txt_shad_black: 0 2px 4px rgba(0, 0, 0, 0.15);
   line-height: 70px;
 }
 //Services
-@mixin set-font-main-descr-serv {
-  font-family: $an_med;
-  font-size: 24px;
-  text-shadow: $txt_shad_black;
+@mixin set-font-main-title-serv{
+	font-family: $an_bold;
+	font-size: 50px;
+	color: $color__brand-white;
+	text-shadow: $txt_shad_black;
+}
+@mixin set-font-main-descr-serv{
+	font-family: $an_med;
+	font-size: 24px;
+	color: $color__brand-white;
+	text-shadow: $txt_shad_black;
 }
 @mixin set-font-title-lv2-serv {
   font-family: $an_bold;
   font-size: 26px;
 }
-@mixin set-font-descr-lv2-serv {
-  font-family: $an_med;
-  font-size: 32px;
+
+@mixin set-font-descr-lv2-serv{
+	font-family: $an_med;
+	font-size: 16px;	
 }
 @mixin set-font-learn-more-serv {
   font-family: $an_bold;
