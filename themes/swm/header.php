@@ -38,12 +38,7 @@
 			
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				<?php get_search_form();?>
-				</article>
-				<?php wp_nav_menu(); ?>
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-			</header><!-- #masthead -->
- 
-			<div id="content" class="site-content">
+				</article>						
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 
