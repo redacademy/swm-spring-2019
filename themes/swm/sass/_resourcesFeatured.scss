@@ -138,6 +138,7 @@
     height: auto;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    
     img {
         grid-column: 1/2;
     }
