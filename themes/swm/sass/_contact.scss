@@ -5,7 +5,7 @@
 
     .entry-content{
         display: grid;
-        width: 400px;
+        width: 425px;
         grid-row-gap: 5%;
         margin-left: auto;
         margin-right: auto;
@@ -13,12 +13,12 @@
 
         h2 {
             grid-row: 1 / 2;
-            font-size: 50px;
+            @include set-font-contact-title;
         }
 
         h4 {
             grid-row: 2 / 3;
-            font-size: 26px;
+            @include set-font-contact-mindfulness;
         }
 
         ol {
@@ -27,11 +27,11 @@
             li {
             counter-increment: list;
             list-style-type: none;
-            font-size: 18px;
+            @include set-font-contact-step-text;
             }
                 li::before {
                         color: $color__brand-light-orange;
-                        font-size: 40px;
+                        @include set-font-contact-steps-number;
                         content: counter(list) "";
                         margin-right: 5%;
                 }
@@ -40,6 +40,7 @@
         .wpcf7{
             grid-row: 4 / 6;
             width: 350px;
+            @include set-font-contact-form-label;
              }
      }
 
@@ -58,15 +59,15 @@
         h2 {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
-            font-size: 50px;
-            padding-right: 30%;
+            @include set-font-contact-title;
+            padding-right: 20%;
             margin-bottom: 10%;
         }
 
         h4 {
             grid-column: 1 / 2;
             grid-row: 2/ 3;
-            font-size: 26px;
+            @include set-font-contact-mindfulness;
             margin-bottom: 5%;
         }
 
@@ -77,13 +78,13 @@
             li {
             counter-increment: list;
             list-style-type: none;
-            font-size: 18px;
+            @include set-font-contact-step-text;
             }
                 li::before {
-                        color: $color__brand-light-orange;
-                        font-size: 40px;
-                        content: counter(list) "";
-                        margin-right: 5%;
+                    color: $color__brand-light-orange;
+                    @include set-font-contact-steps-number;
+                    content: counter(list) "";
+                    margin-right: 5%;
                 }
            
         }
@@ -91,6 +92,7 @@
             grid-column: 2 /3;
             grid-row: 2 / 5;
             width: 375px;
+            @include set-font-contact-form-label;
              }
      }
     }

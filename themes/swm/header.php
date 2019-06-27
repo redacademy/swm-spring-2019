@@ -29,13 +29,16 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 
-			<article class="nav-logo">
-				<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
+				<article class="nav-logo">
+					<a href="<?php echo esc_url(home_url('/')); ?>" rel="home">
 					<img src="<?php echo get_template_directory_uri() . '/images/swm_logo.png'; ?>" class="logo" alt="Starts With Me Logo"> </a>
-			</article>
+				</article>
+
+				<article class="menu-and-search">
 			
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				<?php get_search_form();?>
+				</article>
 			</nav><!-- #site-navigation -->
 		</header><!-- #masthead -->
 
