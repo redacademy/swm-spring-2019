@@ -619,10 +619,8 @@ textarea {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: .5rem; }
-
-.site-main {
-  margin-top: 5rem; }
+  padding: .5rem;
+  z-index: 999; }
 
 .main-navigation {
   display: -webkit-box;
@@ -982,10 +980,8 @@ object {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: .5rem; }
-
-.site-main {
-  margin-top: 5rem; }
+  padding: .5rem;
+  z-index: 999; }
 
 .main-navigation {
   display: -webkit-box;

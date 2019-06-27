@@ -10,8 +10,11 @@
  */
 get_header(); ?>
 
-<div id="primary" class="site-content">
-    <div id="content" role="main">
+
+<div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+
+
 
         <?php while (have_posts()) : the_post(); ?>
 
@@ -155,10 +158,11 @@ get_header(); ?>
             <!-- End Loop -->
 
         </div><!-- #content -->
-    </div><!-- #primary -->
+    </main><!-- #main -->
+</div><!-- #primary -->
 
-    <!-- <section>  -->
-    <!-- <script type="text/javascript">
+<!-- <section>  -->
+<!-- <script type="text/javascript">
             jQuery(document).ready(function($){
                 // $('.front_page_link_container').load('footer.php #colophon', '', function(response, status, xhr) {
                 //     if (status == 'error') {
@@ -171,6 +175,6 @@ get_header(); ?>
                 console.log($(location).attr("href"));
             });
         </script>  -->
-    <?php include 'template-parts/phone-call.php'; ?>
+<?php include 'template-parts/phone-call.php'; ?>
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
