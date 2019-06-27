@@ -197,5 +197,7 @@ add_filter('admin_footer_text','wck_admin_rate_us');
 
 /* include nested repeaters */
 /* if( file_exists( dirname(__FILE__).'/wordpress-creation-kit-api/wck-nested-repeaters/wck-nested-repeaters.php' ) )
-	require_once('wordpress-creation-kit-api/wck-nested-repeaters/wck-nested-repeaters.php'); */
+	require_once('wordpress-creation-kit-api/wck-nested-repeaters/wck-nested-repeaters.php'); */	
+
 ?>
+

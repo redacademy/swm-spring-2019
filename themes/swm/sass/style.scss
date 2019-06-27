@@ -65,15 +65,23 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
+
 @import "navigation";
 
-@import "footer";
 
+@import "footer";
 @import "contact";
 @import "thank-you";
+
+@import "front-page";
+@import "phone-call";
+
 @import "services";
 @import "single-service";
 
 
+
 //Resources
 @import "resourcesFeatured";
+=======
+

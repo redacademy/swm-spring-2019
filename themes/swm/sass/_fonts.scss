@@ -145,3 +145,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Yrsa';
+    src: url('#{$path__font-yrsa}/Yrsa-Bold.eot');
+    src: url('#{$path__font-yrsa}/Yrsa-Bold.eot?#iefix') format('embedded-opentype'),
+        url('#{$path__font-yrsa}/Yrsa-Bold.woff2') format('woff2'),
+        url('#{$path__font-yrsa}/Yrsa-Bold.woff') format('woff'),
+        url('#{$path__font-yrsa}/Yrsa-Bold.ttf') format('truetype'),
+        url('#{$path__font-yrsa}/Yrsa-Bold.svg#Yrsa-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
