@@ -1,0 +1,23 @@
+.bookACallContainer{
+    background-color: $color__brand-light-yellow;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 231px;
+
+    h4{
+        @include set-font-slogan-white();
+        color: $color__text-main;
+    }
+    button{
+        width: 190px;
+        height: 61px;
+        margin-top: 0px;
+        
+    }
+
+}
