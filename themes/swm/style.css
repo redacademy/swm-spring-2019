@@ -153,6 +153,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*****
+How to call a Mixins?
+If you want to call the mixins below:
+		@mixin center-block {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+You just have to do this:
+.box{
+	@include center-block();
+}
+
+
+****/
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -1780,4 +1795,25 @@ footer {
     grid-column: 2 / 4; }
     .single-services .entry-content .single-service-misc-image img {
       max-height: 400px; }
+
+      background: #F39E65;
+      color: #FFFEFA;
+      line-height: 1;
+      padding: .6rem 1rem .4rem; } }
+
+.resourcesFeaturedContainer,
+.resourcesVideoContainer,
+.resourcesPodcastsContainer,
+.resourcesBlogContainer {
+  display: none; }
+
+.singleEbooksContainer {
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 4fr; }
+  .singleEbooksContainer img {
+    grid-column: 1/2; }
+  .singleEbooksContainer .ebooksMeta {
+    grid-column: 2/3; }
+=======
 
