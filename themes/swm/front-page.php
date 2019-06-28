@@ -121,7 +121,11 @@ get_header(); ?>
                         <?php echo get_term_thumbnail($terms->term_taxonomy_id) ?>
                         <section class="meta-services">
                             <p><?php echo $terms->name; ?></p>
-                            <a href="<?php echo get_term_link($terms); ?>">
+                            
+                            <?php $service_url = '';
+                            $service_url = get_site_url() . '/' . strtolower($terms->name) . '-services/';
+                            ?>
+                            <a href="<?php echo $service_url; ?>">
                                 <p>Learn More <span>&#62;</span></p>
                             </a>
                         </section>

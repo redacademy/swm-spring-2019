@@ -1971,3 +1971,25 @@ footer {
     grid-column: 1/2; }
   .singleEbooksContainer .ebooksMeta {
     grid-column: 2/3; }
+
+.error-404 .fourohfour {
+  font-size: 33px;
+  text-align: center;
+  color: #F39E65;
+  font-weight: bold; }
+
+.error-404 .pnf {
+  color: #464646; }
+
+.error-404 .searchfour {
+  width: 30%;
+  margin-left: 35%; }
+
+.error-404 fieldset {
+  border: none; }
+
+.error-404 p {
+  text-align: center; }
+
+.error-404 h1 {
+  text-align: center; }

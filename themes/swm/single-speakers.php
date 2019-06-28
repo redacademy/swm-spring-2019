@@ -33,21 +33,25 @@ get_header(); ?>
 
 				<?php while (have_posts()) : the_post(); ?>
 
+					<section class="single-speaker-info">
+						<h1 class="single-speaker-job"><?php the_cfc_field('speaker_title1', 'speaker-title');  ?></h1>
 
-					<?php the_cfc_field('speaker_title1', 'speaker-title');  ?>
+						<h2 class="single-speaker-name"><?php the_title();  ?></h2>
+						
+						<?php $speaker_biography_image = get_cfc_field('speaker_biography_image', 'speaker-biography-image'); ?>
+						<?php  ?>
+							<?php	 add_image_size( 'single-speaker-image',900, 1000, true );  ?>	
+						<article class="single-speaker-additional-image"><?php echo wp_get_attachment_image($speaker_biography_image, 'single-speaker-image'); ?></article>
 
-					<?php the_title();  ?>
+					<p class="single-speaker-bio"><?php the_cfc_field('speakers_biography', 'speaker-biography');  ?></p>
+		
+				</section>
 
-					<?php $speaker_biography_image = get_cfc_field('speaker_biography_image', 'speaker-biography-image'); ?>
-					<?php echo wp_get_attachment_image($speaker_biography_image); ?>
-
-
-					<?php the_cfc_field('speakers_biography', 'speaker-biography');  ?>
-
+					<section class="single-speaker-social">
 					<?php foreach (get_cfc_meta('speaker_social_media') as $key => $value) { ?>
 						<?php $single_speakers_social_media = get_cfc_field('speaker_social_media', 'speaker-social-platform', false, $key); ?>
 						<?php if ($single_speakers_social_media == 'linkedin') { ?>
-							<a href="<?php get_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>"><?php echo $linkedin_icon; ?></a>
+							<a href="<?php get_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>" class="single-speaker-social-linkedin"><?php echo $linkedin_icon; ?></a>
 						<?php } elseif ($single_speakers_social_media == 'youtube') { ?>
 							<a href="<?php the_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>"><?php echo $youtube_icon; ?></a>
 						<?php } elseif ($single_speakers_social_media == "instagram") { ?>
@@ -57,10 +61,11 @@ get_header(); ?>
 						<?php }; ?>
 
 					<?php }  ?>
+						</section>
 					<?php foreach (get_cfc_meta('speaker_as_seen_in') as $key => $value) { ?>
 						<?php $speaker_as_seen_in_image = get_cfc_field('speaker_as_seen_in', 'speaker-company-logo'); ?>
-						<a href="<?php the_cfc_field('speaker_as_seen_in', 'speaker-link-as-seen-in');  ?>"> <?php $speaker_as_seen_in_image = get_cfc_field('speaker_as_seen_in', 'speaker-company-logo'); ?>
-							<?php echo wp_get_attachment_image($speaker_as_seen_in_image); ?></a>
+						<section class="single-speaker-as-seen"><a href="<?php the_cfc_field('speaker_as_seen_in', 'speaker-link-as-seen-in');  ?>"> <?php $speaker_as_seen_in_image = get_cfc_field('speaker_as_seen_in', 'speaker-company-logo'); ?>
+							<?php echo wp_get_attachment_image($speaker_as_seen_in_image); ?></a></section>
 					<?php }  ?>
 				<?php
 
