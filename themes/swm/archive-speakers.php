@@ -10,7 +10,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-        <?php while (have_posts()) : the_post(); ?>
+  
 
             <header class="entry-header">
                 <!-- Code to display the "Our Team" page content -->
@@ -23,11 +23,11 @@ get_header(); ?>
                 <?php the_post_thumbnail('large'); ?>
             </header><!-- .entry-header -->
 
-        <?php endwhile; ?>
+      
         <div class="entry-content">
 
             <!-- Speakers Archive Loop Start -->
-            <h4>Speakers</h4>
+            <h3>Speakers</h3>
             <?php
             $archive_speakers_args = array(
                 'post_type' => 'speakers',
@@ -45,30 +45,36 @@ get_header(); ?>
             $archive_speakers_query = new WP_Query($archive_speakers_args);
             while ($archive_speakers_query->have_posts()) : $archive_speakers_query->the_post();
                 ?>
-                
-                <img src="<?php the_cfc_field('speaker_image', 'speaker-image-file');  ?>">
-                <?php the_title();  ?>
-                <?php the_cfc_field('speaker_title1', 'speaker-title');  ?>
-                <?php the_cfc_field('speaker_summary1', 'speaker-summary');  ?>
+            <section class="speaker">
+               <article class="speaker-image"> <img src="<?php the_cfc_field('speaker_image', 'speaker-image-file');  ?>"></article>
+               <article class="speaker-info">
+               <h4 class="speaker-name"> <?php the_title();  ?></h3>
+               <p class="speaker-job"> <?php the_cfc_field('speaker_title1', 'speaker-title');  ?></p>
+               <p class="speaker-bio"> <?php the_cfc_field('speaker_summary1', 'speaker-summary');  ?></p>
 
-                <a href="<?php esc_url(the_permalink()) ?>">learn more &rarr;</a>
-            
-            <?php endwhile; ?>
+                <a href="<?php esc_url(the_permalink()) ?>">read more &rarr;</a>
+           
 
             <?php foreach (get_cfc_meta('speaker_social_media') as $key => $value) { ?>
                 <?php $speakers_social_media = get_cfc_field('speaker_social_media', 'speaker-social-platform', false, $key); ?>
                 <?php if ($speakers_social_media == 'linkedin') { ?>
-                    <a href="<?php get_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>"><?php echo $linkedin_icon; ?></a>
+                    <a href="<?php get_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>" class="speaker-social-linkedin"><?php echo $linkedin_icon; ?></a>
                 <?php } elseif ($speakers_social_media == 'youtube') { ?>
-                    <a href="<?php the_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>"><?php echo $youtube_icon; ?></a>
+                    <a href="<?php the_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>" class="speaker-social-youtube"><?php echo $youtube_icon; ?></a>
                 <?php } elseif ($speakers_social_media == "instagram") { ?>
-                    <a href="<?php the_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>"><?php echo $instagram_icon; ?></a>
+                    <a href="<?php the_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>" class="speaker-social-instagram"><?php echo $instagram_icon; ?></a>
                 <?php } elseif ($speakers_social_media == "twitter") { ?>
-                    <a href="<?php the_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>"><?php echo $twitter_icon; ?></a>
+                    <a href="<?php the_cfc_field('speaker_social_media', 'speaker-social-link', false, $key); ?>" class="speaker-social-twitter"><?php echo $twitter_icon; ?></a>
                 <?php }; ?>
 
             <?php }  ?>
+            </article>
+                </section>
 
+            <?php endwhile; ?>
+
+          
+                      
             <!-- End Loop -->
 
         </div><!-- .entry-content -->
