@@ -5,25 +5,25 @@ footer{
     background-color: #20bed4;
     color: #fffefa;
     display: flex;
-
+ 
     .site-info{
     flex-direction: row;
     text-align: center;
-
+ 
     .phone{
         font-size: 12px;
-        margin-top: 8%;  
+        margin-top: 8%;
     }
-
+ 
     .warning{
         font-size: 11px;
     }
-
+ 
     .copyright{
-        font-size: 12px;  
+        font-size: 12px;
         margin-top: 7%;
     }
-
+ 
     .social-icons{
         font-size: 14px;
         color: #fffefa;
@@ -33,28 +33,28 @@ footer{
             margin-right: 3.5%;
         }
     }
-
+ 
     } // End of Mobile
-
-
-
+ 
+ 
+ 
     @media only screen and (min-width: 600px) {
-
+ 
         .site-info{
         .phone{
             font-size: 14px;
-            margin-top: 2%;  
+            margin-top: 2%;
         }
-        
+ 
         .warning{
             font-size: 12px;
         }
-    
+ 
         .copyright{
-            font-size: 12px;  
+            font-size: 12px;
             margin-top: 6%;
         }
-    
+ 
         .social-icons{
             font-size: 16px;
             color: #fffefa;
@@ -65,54 +65,62 @@ footer{
             }
         }
     }
-
-} //End of Tablet
-
-
-
+ 
+ } //End of Tablet
+ 
     @media only screen and (min-width: 1200px) {
-
+ 
         display: block;
-   
+ 
     .site-info{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 60px 120px 60px;
-    }
-
+ 
+ 
     .social-icons{
-        grid-column-start: 2;
+        margin-top: -19px;
         font-size: 20px;
         color: #fffefa;
-        margin-left: 105px; 
+        margin-left: 105px;
+ 
+ 
         a{
             text-decoration: none;
             color: #fffefa;
-            margin-right: 3.5%;        
+            margin-right: 4.5%;
         }
     }
-
-
-    .phone{
-        grid-column-start: 1;
-        text-align: start;
-        margin-left: 147px;
-    }
-
+ 
+ 
+ 
     .warning{
         grid-row-start: 2;
         width: 416px;
         height: 80px;
         margin-left: 129px;
+        margin-top: 38px;
+        font-size: 16px;
+        text-align: left;
     }
-
+ 
     .copyright{
         font-size: 14px;
         grid-column: 2;
         grid-row: 3;
         margin-top: 10%;
-        margin-left: 60px;
     }
-} //End of Desktop
-
-}  // Footer
+ 
+    .phone{
+        font-size: 27px;
+        font-weight: 400;
+        grid-column-start: 1;
+        text-align: start;
+        margin-left: 147px;
+        margin-top: 33px;
+    }
+ }// .siteinfo
+ 
+ } //End of Desktop
+ 
+ }  // Footer

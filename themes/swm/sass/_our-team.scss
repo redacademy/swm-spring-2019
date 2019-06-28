@@ -15,7 +15,7 @@
         background-repeat: no-repeat;
         background-size: 25%;
         margin-bottom: 10%;
-        h2{
+        .has-large-font-size{
             @include set-font-main-title-sbout;
             width: 45%;
             margin-left:auto;

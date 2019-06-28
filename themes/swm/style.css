@@ -1211,33 +1211,41 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 60px 120px 60px; }
-      footer .social-icons {
-        grid-column-start: 2;
-        font-size: 20px;
-        color: #fffefa;
-        margin-left: 105px; }
-        footer .social-icons a {
-          text-decoration: none;
+        footer .site-info .social-icons {
+          margin-top: -19px;
+          font-size: 20px;
           color: #fffefa;
-          margin-right: 3.5%; }
-      footer .phone {
-        grid-column-start: 1;
-        text-align: start;
-        margin-left: 147px; }
-      footer .warning {
-        grid-row-start: 2;
-        width: 416px;
-        height: 80px;
-        margin-left: 129px; }
-      footer .copyright {
-        font-size: 14px;
-        grid-column: 2;
-        grid-row: 3;
-        margin-top: 10%;
-        margin-left: 60px; } }
+          margin-left: 105px; }
+          footer .site-info .social-icons a {
+            text-decoration: none;
+            color: #fffefa;
+            margin-right: 4.5%; }
+        footer .site-info .warning {
+          grid-row-start: 2;
+          width: 416px;
+          height: 80px;
+          margin-left: 129px;
+          margin-top: 38px;
+          font-size: 16px;
+          text-align: left; }
+        footer .site-info .copyright {
+          font-size: 14px;
+          grid-column: 2;
+          grid-row: 3;
+          margin-top: 10%; }
+        footer .site-info .phone {
+          font-size: 27px;
+          font-weight: 400;
+          grid-column-start: 1;
+          text-align: start;
+          margin-left: 147px;
+          margin-top: 33px; } }
 
 .page-id-34 .entry-title {
   display: none; }
+
+.page-id-34 .site-main {
+  margin-top: 10rem; }
 
 .page-id-34 .entry-content {
   display: grid;
@@ -1957,20 +1965,143 @@ footer {
     .single-services .entry-content .single-service-misc-image img {
       max-height: 400px; }
 
-.resourcesFeaturedContainer,
-.resourcesVideoContainer,
+.resourcesPage {
+  top: 20px; }
+
+.resourcesMenu {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px; }
+  .resourcesMenu h3 {
+    margin-top: 20px;
+    font-family: "Avenir-Next-Bold";
+    font-size: 40px; }
+  .resourcesMenu .resourcesMenuCategories {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin-top: 20px; }
+    .resourcesMenu .resourcesMenuCategories a {
+      margin-right: 40px; }
+    .resourcesMenu .resourcesMenuCategories li:nth-child(n + 2) {
+      margin-left: 73px; }
+
+.resourcesEbooksContainer,
 .resourcesPodcastsContainer,
+.resourcesVideoContainer,
 .resourcesBlogContainer {
   display: none; }
+
+iframe {
+  border-radius: 25px; }
+
+.resourcesContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px; }
+
+.resourcesFeaturedContainer {
+  display: grid;
+  grid-template-areas: "video podcasts" "videos ebook" "blogs ebook"; }
+  .resourcesFeaturedContainer .featuredVideoContainer {
+    grid-area: video; }
+  .resourcesFeaturedContainer .featuredVideosContainer {
+    margin-top: 50px;
+    grid-area: videos; }
+    .resourcesFeaturedContainer .featuredVideosContainer h5 {
+      font-family: "Avenir-Next-Demi-Bold";
+      font-size: 26px; }
+    .resourcesFeaturedContainer .featuredVideosContainer .test {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .resourcesFeaturedContainer .featuredVideosContainer .test .singleFeaturedVideosContainer {
+        width: 25%; }
+        .resourcesFeaturedContainer .featuredVideosContainer .test .singleFeaturedVideosContainer iframe {
+          height: 101px;
+          border-radius: 25px; }
+  .resourcesFeaturedContainer .featuredBlogContainer {
+    grid-area: blogs; }
+    .resourcesFeaturedContainer .featuredBlogContainer h5 {
+      font-family: "Avenir-Next-Demi-Bold";
+      font-size: 26px; }
+    .resourcesFeaturedContainer .featuredBlogContainer .test2 {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .resourcesFeaturedContainer .featuredBlogContainer .test2 .singleFeaturedBlogContainer {
+        width: 25%; }
+        .resourcesFeaturedContainer .featuredBlogContainer .test2 .singleFeaturedBlogContainer a img {
+          height: 101px;
+          border-radius: 25px; }
+  .resourcesFeaturedContainer .featuredPodcastsContainer {
+    grid-area: podcasts;
+    margin-left: 75px; }
+    .resourcesFeaturedContainer .featuredPodcastsContainer h5 {
+      font-family: "Avenir-Next-Demi-Bold";
+      font-size: 26px; }
+  .resourcesFeaturedContainer .featuredEbookContainer {
+    grid-area: ebook;
+    margin-left: 75px;
+    margin-top: 50px; }
+    .resourcesFeaturedContainer .featuredEbookContainer h5 {
+      font-family: "Avenir-Next-Demi-Bold";
+      font-size: 26px; }
+    .resourcesFeaturedContainer .featuredEbookContainer .singleFeaturedEbookContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .resourcesFeaturedContainer .featuredEbookContainer .singleFeaturedEbookContainer a {
+        width: 50%; }
+        .resourcesFeaturedContainer .featuredEbookContainer .singleFeaturedEbookContainer a img {
+          max-width: 100%;
+          max-height: 100%; }
+      .resourcesFeaturedContainer .featuredEbookContainer .singleFeaturedEbookContainer p {
+        margin-left: 40px; }
 
 .singleEbooksContainer {
   height: auto;
   display: grid;
   grid-template-columns: 1fr 4fr; }
   .singleEbooksContainer img {
-    grid-column: 1/2; }
+    grid-column: 1/2;
+    -ms-flex-item-align: center;
+        align-self: center; }
   .singleEbooksContainer .ebooksMeta {
-    grid-column: 2/3; }
+    grid-column: 2/3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: 50px;
+    padding: 100px 50px 100px 0; }
+    .singleEbooksContainer .ebooksMeta .ebooksTitle h5 {
+      font-family: "Avenir-Next-Demi-Bold";
+      font-size: 26px; }
+    .singleEbooksContainer .ebooksMeta > p {
+      font-family: "Avenir-Next-Regular";
+      font-size: 12px; }
+    .singleEbooksContainer .ebooksMeta .downloadButtonLink {
+      position: relative;
+      bottom: 30px; }
 
 .error-404 .fourohfour {
   font-size: 33px;
@@ -1993,3 +2124,164 @@ footer {
 
 .error-404 h1 {
   text-align: center; }
+
+.single-speakers .site-content {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../../images/swm_logo_icon.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/swm_logo_icon.png");
+  background-position: 105% 0%;
+  background-repeat: no-repeat;
+  background-size: 25%; }
+
+.single-speakers .site-main {
+  margin-top: 10rem;
+  margin-bottom: 5rem; }
+
+.single-speakers .entry-content {
+  display: grid;
+  grid-row-gap: 1.5rem;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto; }
+
+.single-speakers .single-speaker-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: .5rem; }
+  .single-speakers .single-speaker-info .single-speaker-job {
+    font-size: 22px;
+    font-family: "Avenir-Next-Demi-Bold";
+    margin-bottom: 0;
+    grid-column: 1 / 2; }
+  .single-speakers .single-speaker-info .single-speaker-name {
+    font-family: "Avenir-Next-Demi-Bold";
+    font-size: 30px;
+    grid-column: 1 / 2; }
+  .single-speakers .single-speaker-info .single-speaker-additional-image {
+    width: 349px;
+    height: 546px;
+    grid-column: 1 / 2; }
+    .single-speakers .single-speaker-info .single-speaker-additional-image img {
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: 50% 50%;
+         object-position: 50% 50%;
+      height: inherit;
+      border-radius: 25px; }
+  .single-speakers .single-speaker-info .single-speaker-bio {
+    font-family: "Avenir-Next-Regular";
+    font-size: 16px;
+    grid-column: 2 / 3;
+    line-height: 2rem; }
+
+.single-speakers .single-speaker-social .fab {
+  font-size: 3rem; }
+
+.search-results .site-content {
+  width: 100%; }
+
+.search-results .site-main {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto; }
+  .search-results .site-main article {
+    margin-bottom: 2rem;
+    margin-top: 3rem; }
+
+.search-results .page-title {
+  font-family: "Avenir-Next-Bold";
+  font-size: 32px;
+  letter-spacing: .10rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #F39E65; }
+
+.search-results .entry-title {
+  font-family: "Avenir-Next-Medium";
+  font-size: 20px; }
+
+.search-results .entry-summary {
+  font-family: "Avenir-Next-Regular";
+  font-size: 16px;
+  text-align: justify; }
+
+.post-type-archive-speakers .site-content {
+  margin-top: 10rem;
+  width: 100%;
+  margin-bottom: 5rem; }
+
+.post-type-archive-speakers .entry-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 400px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../../images/swm_logo_icon.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/swm_logo_icon.png");
+  background-position: 105% 0%;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  margin-bottom: 10%; }
+  .post-type-archive-speakers .entry-header .has-large-font-size {
+    font-family: "Avenir-Next-Bold";
+    font-size: 50px;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto; }
+
+.post-type-archive-speakers .entry-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-items: flex-start; }
+  .post-type-archive-speakers .entry-content h3 {
+    font-family: "Avenir-Next-Bold";
+    font-size: 26px;
+    margin-bottom: 5rem; }
+  .post-type-archive-speakers .entry-content .speaker {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1rem;
+    margin-bottom: 3rem;
+    width: 100%; }
+    .post-type-archive-speakers .entry-content .speaker p {
+      margin-bottom: 0; }
+    .post-type-archive-speakers .entry-content .speaker .speaker-image {
+      grid-column: 1 /2;
+      width: 240px;
+      height: 300px; }
+      .post-type-archive-speakers .entry-content .speaker .speaker-image img {
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: 50% 50%;
+           object-position: 50% 50%;
+        height: inherit;
+        border-radius: 25px; }
+    .post-type-archive-speakers .entry-content .speaker .speaker-info {
+      display: grid;
+      grid-row-gap: .5rem;
+      width: 100%; }
+      .post-type-archive-speakers .entry-content .speaker .speaker-info .speaker-name {
+        grid-column: 2 /3;
+        font-family: "Avenir-Next-Demi-Bold";
+        font-size: 24px; }
+      .post-type-archive-speakers .entry-content .speaker .speaker-info .speaker-job {
+        grid-column: 2 /3;
+        font-family: "Avenir-Next-Demi-Bold";
+        font-size: 18px; }
+      .post-type-archive-speakers .entry-content .speaker .speaker-info .speaker-bio {
+        grid-column: 2 /3;
+        font-family: "Avenir-Next-Regular";
+        font-size: 16px; }
+      .post-type-archive-speakers .entry-content .speaker .speaker-info a {
+        grid-column: 2 /3; }
