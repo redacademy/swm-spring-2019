@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template Name: Front Page Template
  *
@@ -21,6 +22,9 @@ get_header(); ?>
             <header class="entry-header">
                 <?php the_content(); ?>
                 <?php the_post_thumbnail('full'); ?>
+                <!-- Add this image for the logo -->
+                <?php $uploads = wp_upload_dir(); ?>
+                <img src="<?php echo $uploads['baseurl'] . '/2019/07/image_hero_gradient-mobile-version.png'; ?>" class="hero-banner-mobile" alt="Starts With Me Hero Banner mobile version">
             </header><!-- .entry-header -->
 
         <?php endwhile; ?>
@@ -121,7 +125,7 @@ get_header(); ?>
                         <?php echo get_term_thumbnail($terms->term_taxonomy_id) ?>
                         <section class="meta-services">
                             <p><?php echo $terms->name; ?></p>
-                            
+
                             <?php $service_url = '';
                             $service_url = get_site_url() . '/' . strtolower($terms->name) . '-services/';
                             ?>

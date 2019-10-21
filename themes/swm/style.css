@@ -506,11 +506,11 @@ body {
 
 blockquote,
 q {
-  quotes: '' ''; }
+  quotes: "" ""; }
   blockquote:before, blockquote:after,
   q:before,
   q:after {
-    content: ''; }
+    content: ""; }
 
 hr {
   background-color: #FFFEFA;
@@ -533,12 +533,6 @@ dt {
 
 dd {
   margin: 0 1.5rem 1.5rem; }
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
 
 table {
   margin: 0 0 1.5rem;
@@ -619,8 +613,8 @@ textarea {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: .5rem;
-  z-index: 999; }
+  padding: 0.5rem;
+  z-index: 99; }
 
 .main-navigation {
   display: -webkit-box;
@@ -638,8 +632,8 @@ textarea {
     -ms-flex-item-align: center;
         align-self: center; }
     .main-navigation .nav-logo .logo {
-      width: 75%;
-      height: 75%; }
+      width: 50%;
+      height: 50%; }
   .main-navigation .menu-and-search {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -671,9 +665,9 @@ textarea {
         color: #FFFEFA;
         background: #F39E65;
         border-radius: 15px;
-        padding: .25em 1.2em; }
+        padding: 0.25em 1.2em; }
       .main-navigation .menu-and-search #primary-menu li {
-        padding: .5em; }
+        padding: 0.5em; }
       .main-navigation .menu-and-search #primary-menu .menu-item a:hover {
         border-bottom: none; }
     .main-navigation .menu-and-search fieldset {
@@ -701,14 +695,16 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-@media screen and (min-width: 600px) {
+/* Desktop version*/
+@media screen and (min-width: 1200px) {
   .site-header {
     overflow: hidden;
     background: #FFFEFA;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: .5rem; }
+    padding: 0.5rem;
+    z-index: 99; }
   .site-main {
     margin-top: 5rem; }
   .main-navigation {
@@ -721,7 +717,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 1240px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto; }
     .main-navigation .nav-logo {
@@ -730,7 +726,7 @@ a {
       -ms-flex-item-align: center;
           align-self: center; }
       .main-navigation .nav-logo .logo {
-        width: 50%;
+        width: 25%;
         height: 50%; }
     .main-navigation .menu-and-search {
       display: -webkit-box;
@@ -769,9 +765,9 @@ a {
           color: #FFFEFA;
           background: #F39E65;
           border-radius: 15px;
-          padding: .25em 1.2em; }
+          padding: 0.25em 1.2em; }
         .main-navigation .menu-and-search #primary-menu li {
-          padding: .5em; }
+          padding: 0.5em; }
         .main-navigation .menu-and-search #primary-menu .menu-item a:hover {
           border-bottom: 2px solid #4e4949; }
       .main-navigation .menu-and-search fieldset {
@@ -980,8 +976,8 @@ object {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: .5rem;
-  z-index: 999; }
+  padding: 0.5rem;
+  z-index: 99; }
 
 .main-navigation {
   display: -webkit-box;
@@ -999,8 +995,8 @@ object {
     -ms-flex-item-align: center;
         align-self: center; }
     .main-navigation .nav-logo .logo {
-      width: 75%;
-      height: 75%; }
+      width: 50%;
+      height: 50%; }
   .main-navigation .menu-and-search {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1032,9 +1028,9 @@ object {
         color: #FFFEFA;
         background: #F39E65;
         border-radius: 15px;
-        padding: .25em 1.2em; }
+        padding: 0.25em 1.2em; }
       .main-navigation .menu-and-search #primary-menu li {
-        padding: .5em; }
+        padding: 0.5em; }
       .main-navigation .menu-and-search #primary-menu .menu-item a:hover {
         border-bottom: none; }
     .main-navigation .menu-and-search fieldset {
@@ -1062,14 +1058,16 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-@media screen and (min-width: 600px) {
+/* Desktop version*/
+@media screen and (min-width: 1200px) {
   .site-header {
     overflow: hidden;
     background: #FFFEFA;
     position: fixed;
     top: 0;
     width: 100%;
-    padding: .5rem; }
+    padding: 0.5rem;
+    z-index: 99; }
   .site-main {
     margin-top: 5rem; }
   .main-navigation {
@@ -1082,7 +1080,7 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 1240px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto; }
     .main-navigation .nav-logo {
@@ -1091,7 +1089,7 @@ a {
       -ms-flex-item-align: center;
           align-self: center; }
       .main-navigation .nav-logo .logo {
-        width: 50%;
+        width: 25%;
         height: 50%; }
     .main-navigation .menu-and-search {
       display: -webkit-box;
@@ -1130,9 +1128,9 @@ a {
           color: #FFFEFA;
           background: #F39E65;
           border-radius: 15px;
-          padding: .25em 1.2em; }
+          padding: 0.25em 1.2em; }
         .main-navigation .menu-and-search #primary-menu li {
-          padding: .5em; }
+          padding: 0.5em; }
         .main-navigation .menu-and-search #primary-menu .menu-item a:hover {
           border-bottom: 2px solid #4e4949; }
       .main-navigation .menu-and-search fieldset {
@@ -1161,85 +1159,139 @@ a {
 
 footer {
   width: 100%;
-  height: 240px;
+  height: 400px;
   background-color: #20bed4;
   color: #fffefa;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+  display: grid;
+  grid-template-rows: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
   footer .site-info {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    text-align: center; }
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    width: 90%;
+    height: 80%;
+    margin: auto; }
     footer .site-info .phone {
-      font-size: 12px;
-      margin-top: 8%; }
+      grid-row: 2/3;
+      -ms-flex-item-align: end;
+          align-self: end; }
+      footer .site-info .phone .link-phone {
+        font-size: 1.6em;
+        color: #FFFEFA; }
     footer .site-info .warning {
-      font-size: 11px; }
-    footer .site-info .copyright {
-      font-size: 12px;
-      margin-top: 7%; }
+      grid-row: 3/4;
+      -ms-flex-item-align: end;
+          align-self: end;
+      font-size: 1.15em; }
     footer .site-info .social-icons {
-      font-size: 14px;
-      color: #fffefa; }
+      grid-row: 1/2;
+      align-self: center;
+      justify-self: center;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 25px 25px 25px 25px 25px;
+      grid-gap: 15%; }
       footer .site-info .social-icons a {
-        text-decoration: none;
-        color: #fffefa;
-        margin-right: 3.5%; }
+        font-size: 1.8em;
+        color: #FFFEFA;
+        justify-self: center; }
+    footer .site-info .copyright {
+      grid-row: 4/5;
+      -ms-flex-item-align: end;
+          align-self: end;
+      justify-self: end; }
   @media only screen and (min-width: 600px) {
-    footer .site-info .phone {
-      font-size: 14px;
-      margin-top: 2%; }
-    footer .site-info .warning {
-      font-size: 12px; }
-    footer .site-info .copyright {
-      font-size: 12px;
-      margin-top: 6%; }
-    footer .site-info .social-icons {
-      font-size: 16px;
-      color: #fffefa; }
-      footer .site-info .social-icons a {
-        text-decoration: none;
-        color: #fffefa;
-        margin-right: 3.5%; } }
-  @media only screen and (min-width: 1200px) {
-    footer {
-      display: block; }
-      footer .site-info {
+    footer .site-info {
+      display: grid;
+      grid-template-rows: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      width: 90%;
+      height: 80%;
+      margin: auto; }
+      footer .site-info .phone {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        -ms-flex-item-align: end;
+            align-self: end; }
+        footer .site-info .phone .link-phone {
+          font-size: 1.6em;
+          color: #FFFEFA; }
+      footer .site-info .warning {
+        grid-row: 2/3;
+        grid-column: 1/3;
+        -ms-flex-item-align: end;
+            align-self: end;
+        text-align: center;
+        justify-self: center;
+        width: 80%;
+        font-size: 1.15em; }
+      footer .site-info .social-icons {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        align-self: end;
+        justify-self: center;
+        width: unset;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 120px 60px; }
-        footer .site-info .social-icons {
-          margin-top: -19px;
-          font-size: 20px;
-          color: #fffefa;
-          margin-left: 105px; }
-          footer .site-info .social-icons a {
-            text-decoration: none;
-            color: #fffefa;
-            margin-right: 4.5%; }
-        footer .site-info .warning {
-          grid-row-start: 2;
-          width: 416px;
-          height: 80px;
-          margin-left: 129px;
-          margin-top: 38px;
-          font-size: 16px;
-          text-align: left; }
-        footer .site-info .copyright {
-          font-size: 14px;
-          grid-column: 2;
-          grid-row: 3;
-          margin-top: 10%; }
-        footer .site-info .phone {
-          font-size: 27px;
-          font-weight: 400;
-          grid-column-start: 1;
-          text-align: start;
-          margin-left: 147px;
-          margin-top: 33px; } }
+        grid-template-columns: 25px 25px 25px 25px 25px;
+        grid-gap: 45px; }
+        footer .site-info .social-icons a {
+          font-size: 1.4em;
+          color: #FFFEFA; }
+      footer .site-info .copyright {
+        grid-row: 3/4;
+        grid-column: 2/3;
+        -ms-flex-item-align: end;
+            align-self: end;
+        justify-self: center; } }
+  @media only screen and (min-width: 1200px) {
+    footer .site-info {
+      display: grid;
+      grid-template-rows: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
+      width: 90%;
+      height: 80%;
+      margin: auto; }
+      footer .site-info .phone {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        -ms-flex-item-align: end;
+            align-self: end; }
+        footer .site-info .phone .link-phone {
+          font-size: 1.6em;
+          color: #FFFEFA; }
+      footer .site-info .warning {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        -ms-flex-item-align: end;
+            align-self: end;
+        text-align: unset;
+        justify-self: unset;
+        width: 60%;
+        font-size: 1.2em; }
+      footer .site-info .social-icons {
+        grid-row: 1/2;
+        grid-column: 2/3;
+        align-self: end;
+        justify-self: center;
+        width: unset;
+        display: grid;
+        grid-template-columns: 25px 25px 25px 25px 25px;
+        grid-gap: 45px; }
+        footer .site-info .social-icons a {
+          font-size: 1.4em;
+          color: #FFFEFA; }
+      footer .site-info .copyright {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        -ms-flex-item-align: end;
+            align-self: end;
+        justify-self: center; } }
 
 .page-id-34 .entry-title {
   display: none; }
@@ -1421,7 +1473,11 @@ footer {
         cursor: pointer; } }
 
 .home {
+  margin-right: 0;
   background-color: #FFFEFA; }
+  .home * {
+    margin-right: 0;
+    margin-left: 0; }
   .home h4 {
     font-family: "Avenir-Next-Demi-Bold";
     font-size: 26px; }
@@ -1435,37 +1491,46 @@ footer {
       color: #FFFEFA;
       width: 28%;
       line-height: 70px;
-      top: 30%;
-      left: 20%; }
-    .home .entry-header img {
+      font-size: 45px;
+      top: 10%;
+      left: 5%;
+      width: 80%; }
+    .home .entry-header .wp-post-image {
+      display: none; }
+    .home .entry-header .hero-banner-mobile {
       width: 100%;
-      height: auto; }
+      height: auto;
+      display: inherit; }
   .home .entry-content .pastClients {
     display: grid;
     grid-template-rows: 1fr auto;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 200px 1fr;
     width: 45%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    width: 80%;
+    margin-left: 5%;
+    margin-bottom: 30px; }
     .home .entry-content .pastClients h4 {
       margin-right: 50px;
       -ms-flex-item-align: center;
           align-self: center; }
     .home .entry-content .pastClients .pastClientsContainer {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+      display: grid;
       grid-template-rows: 1fr;
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
       .home .entry-content .pastClients .pastClientsContainer .aPastClient {
+        grid-row: 1/2; }
+      .home .entry-content .pastClients .pastClientsContainer .aPastClient:nth-child(n + 3) {
+        display: none;
         margin-right: 35px; }
   .home .entry-content .serviceBannerContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 2fr;
-    width: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
     margin-left: auto;
     margin-right: 0px;
     background-color: #FBDEB3;
@@ -1476,7 +1541,7 @@ footer {
       display: grid;
       grid-template-rows: 1fr auto; }
       .home .entry-content .serviceBannerContainer figure img {
-        width: 131px;
+        width: 60%;
         height: auto;
         -ms-flex-item-align: center;
             align-self: center;
@@ -1485,29 +1550,40 @@ footer {
         margin-bottom: 30px;
         font-family: "Avenir-Next-Medium";
         font-size: 30px;
+        font-size: 20px;
         -ms-flex-item-align: end;
             align-self: end;
         justify-self: center; }
   .home .entry-content .whoWeAreContainer {
     display: grid;
     grid-template-rows: 1fr auto;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 200px 1fr;
     width: 45%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 200px 1fr;
+    width: 70%;
+    margin-bottom: 30px; }
     .home .entry-content .whoWeAreContainer h4 {
       margin-right: 50px;
       -ms-flex-item-align: center;
           align-self: center; }
+    .home .entry-content .whoWeAreContainer h4 {
+      grid-column: 1/3;
+      margin-bottom: 30px; }
     .home .entry-content .whoWeAreContainer .whoText {
+      grid-row: 2/3;
+      grid-column: 1/3;
       font-family: "Avenir-Next-Medium";
       font-size: 16px;
       line-height: 32px;
       color: #5f5f5f; }
   .home .entry-content .sloganContainer {
     display: grid;
-    width: 60%;
+    width: 90%;
     height: 260px;
     margin-right: auto;
     margin-left: 0px;
@@ -1524,34 +1600,43 @@ footer {
       font-family: "Avenir-Next-Demi-Bold";
       font-size: 30px;
       color: #FFFEFA;
-      width: 50%;
-      margin-right: 200px;
+      width: 80%;
+      margin-right: auto;
       margin-left: auto;
       line-height: 40px;
       text-align: center; }
   .home .entry-content .howWeHelpContainer {
     display: grid;
     grid-template-rows: 1fr auto;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 200px 1fr;
     width: 45%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 200px 1fr;
+    width: 70%;
+    margin-bottom: 30px; }
     .home .entry-content .howWeHelpContainer h4 {
       margin-right: 50px;
       -ms-flex-item-align: center;
           align-self: center; }
     .home .entry-content .howWeHelpContainer .howWeHelpTitle {
+      grid-column: 1/3;
       -ms-flex-item-align: start;
-          align-self: start; }
+          align-self: start;
+      margin-bottom: 30px; }
     .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer {
+      grid-row: 2/3;
+      grid-column: 1/3;
       display: grid;
       grid-template-rows: 1fr 1fr 1fr; }
       .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer .howWeHelpBlock {
         display: grid;
         grid-template-columns: auto 1fr;
         grid-template-rows: 1fr;
-        margin-bottom: 50px; }
+        margin-bottom: 30px; }
         .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer .howWeHelpBlock img {
           grid-column: 1/2;
           grid-row: 1/3;
@@ -1565,7 +1650,7 @@ footer {
           width: 75%;
           margin-left: 30px; }
           .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer .howWeHelpBlock .howWeHelpDescr h4 {
-            font-family: "Avenir-Next-Medium";
+            font-family: 'Avenir-Next-Medium';
             font-size: 24px; }
           .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer .howWeHelpBlock .howWeHelpDescr p {
             font-family: "Avenir-Next-Medium";
@@ -1573,78 +1658,51 @@ footer {
             line-height: 32px;
             color: #5f5f5f; }
   .home .entry-content .strong-view {
-    width: 60%;
-    margin-left: auto;
-    margin-right: 0px;
     background-color: #FBDEB3;
-    border-radius: 30px 0px 0px 30px;
-    margin-bottom: 100px;
-    height: 260px;
-    padding-top: 35px; }
-    .home .entry-content .strong-view .wpmslider-viewport {
-      margin-bottom: auto; }
-    .home .entry-content .strong-view .testimonial-content {
-      position: relative;
-      width: 80%; }
-      .home .entry-content .strong-view .testimonial-content p {
-        font-family: "Avenir-Next-Demi-Bold-Italic";
-        font-size: 19px;
-        line-height: 32px;
-        color: #414141; }
-      .home .entry-content .strong-view .testimonial-content:after, .home .entry-content .strong-view .testimonial-content:before {
-        quotes: "“" "”"; }
-      .home .entry-content .strong-view .testimonial-content:before {
-        position: absolute;
-        top: 15px;
-        color: #fc9f66;
-        content: "";
-        content: open-quote;
-        font-family: "Yrsa";
-        font-size: 120px; }
-      .home .entry-content .strong-view .testimonial-content:after {
-        position: absolute;
-        top: 120px;
-        content: "";
-        content: close-quote;
-        color: #fc9f66;
-        font-family: "Yrsa";
-        font-size: 120px; }
-    .home .entry-content .strong-view .testimonial-name,
-    .home .entry-content .strong-view .testimonial-company {
-      display: inline;
+    margin-bottom: 30px; }
+    .home .entry-content .strong-view .testimonial-content p {
       font-family: "Avenir-Next-Demi-Bold-Italic";
       font-size: 19px;
       line-height: 32px;
-      color: #414141; }
-    .home .entry-content .strong-view .testimonial-name:before {
-      content: "\2014 \2003";
-      font-family: serif; }
-    .home .entry-content .strong-view .testimonial-name:after {
-      content: ", "; }
+      color: #414141;
+      font-size: 15px; }
+    .home .entry-content .strong-view .testimonial-content:after, .home .entry-content .strong-view .testimonial-content:before {
+      color: #fc9f66; }
   .home .entry-content .whoWeServeContainer {
     display: grid;
     grid-template-rows: 1fr auto;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 200px 1fr;
     width: 45%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 200px 1fr;
+    width: 70%;
+    margin-bottom: 30px; }
     .home .entry-content .whoWeServeContainer h4 {
       margin-right: 50px;
       -ms-flex-item-align: center;
           align-self: center; }
+    .home .entry-content .whoWeServeContainer h4 {
+      grid-column: 1/3;
+      margin-bottom: 30px; }
     .home .entry-content .whoWeServeContainer .whoText {
+      grid-row: 2/3;
+      grid-column: 1/3;
       font-family: "Avenir-Next-Medium";
       font-size: 16px;
       line-height: 32px;
       color: #5f5f5f; }
   .home .entry-content .front_page_services_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 50%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80%;
     margin-left: auto;
-    margin-right: 10%;
-    margin-bottom: 100px;
+    margin-right: auto;
+    margin-bottom: 30px;
     justify-items: center;
     grid-gap: 1rem; }
     .home .entry-content .front_page_services_container img {
@@ -1669,19 +1727,28 @@ footer {
   .home .entry-content .resourcesContainer {
     display: grid;
     grid-template-rows: 1fr auto;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 200px 1fr;
     width: 45%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 200px 1fr;
+    width: 70%;
+    margin-bottom: 30px; }
     .home .entry-content .resourcesContainer h4 {
       margin-right: 50px;
       -ms-flex-item-align: center;
           align-self: center; }
     .home .entry-content .resourcesContainer .resourcesTitle {
+      grid-column: 1/3;
       -ms-flex-item-align: start;
-          align-self: start; }
+          align-self: start;
+      margin-bottom: 30px; }
     .home .entry-content .resourcesContainer .front_page_resources_data {
+      grid-row: 2/3;
+      grid-column: 1/3;
       display: grid;
       grid-template-rows: 1fr 1fr 1fr 1fr; }
       .home .entry-content .resourcesContainer .front_page_resources_data .front_page_resources {
@@ -1703,19 +1770,318 @@ footer {
           margin-left: 30px; }
           .home .entry-content .resourcesContainer .front_page_resources_data .front_page_resources .resources_meta_text h4 {
             color: black;
-            font-family: "Avenir-Next-Medium";
+            font-family: 'Avenir-Next-Medium';
             font-size: 24px; }
           .home .entry-content .resourcesContainer .front_page_resources_data .front_page_resources .resources_meta_text p {
             font-family: "Avenir-Next-Medium";
             font-size: 16px;
             line-height: 32px;
             color: #5f5f5f; }
+  @media only screen and (min-width: 880px) {
+    .home {
+      background-color: #FFFEFA; }
+      .home h4 {
+        font-family: "Avenir-Next-Demi-Bold";
+        font-size: 26px; }
+      .home .entry-header {
+        position: relative; }
+        .home .entry-header h2 {
+          position: absolute;
+          font-family: "Avenir-Next-Bold";
+          font-size: 50px;
+          text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+          color: #FFFEFA;
+          width: 28%;
+          line-height: 70px;
+          font-size: 45px;
+          top: 30%;
+          left: 10%; }
+        .home .entry-header .wp-post-image {
+          width: 100%;
+          height: auto;
+          display: inherit; }
+        .home .entry-header .hero-banner-mobile {
+          display: none; }
+      .home .entry-content .pastClients {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 200px 1fr;
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; }
+        .home .entry-content .pastClients h4 {
+          margin-right: 50px;
+          -ms-flex-item-align: center;
+              align-self: center; }
+        .home .entry-content .pastClients .pastClientsContainer {
+          display: grid;
+          grid-template-rows: 1fr;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .home .entry-content .pastClients .pastClientsContainer .aPastClient {
+            grid-row: 1/2;
+            display: inherit;
+            margin-right: 35px; }
+          .home .entry-content .pastClients .pastClientsContainer .aPastClient:nth-child(n + 3) {
+            display: inherit; }
+      .home .entry-content .serviceBannerContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0px;
+        background-color: #FBDEB3;
+        border-radius: 30px 0px 0px 30px;
+        margin-bottom: 100px;
+        height: 260px; }
+        .home .entry-content .serviceBannerContainer figure {
+          display: grid;
+          grid-template-rows: 1fr auto; }
+          .home .entry-content .serviceBannerContainer figure img {
+            width: 131px;
+            height: auto;
+            -ms-flex-item-align: center;
+                align-self: center;
+            justify-self: center; }
+          .home .entry-content .serviceBannerContainer figure figcaption {
+            margin-bottom: 30px;
+            font-family: "Avenir-Next-Medium";
+            font-size: 30px;
+            font-size: 30px;
+            -ms-flex-item-align: end;
+                align-self: end;
+            justify-self: center; }
+      .home .entry-content .whoWeAreContainer {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 200px 1fr;
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; }
+        .home .entry-content .whoWeAreContainer h4 {
+          margin-right: 50px;
+          -ms-flex-item-align: center;
+              align-self: center; }
+        .home .entry-content .whoWeAreContainer .whoText {
+          font-family: "Avenir-Next-Medium";
+          font-size: 16px;
+          line-height: 32px;
+          color: #5f5f5f; }
+      .home .entry-content .sloganContainer {
+        display: grid;
+        width: 60%;
+        height: 260px;
+        margin-right: auto;
+        margin-left: 0px;
+        background-color: #fc9f66;
+        border-radius: 0px 30px 30px 0px;
+        margin-bottom: 100px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .home .entry-content .sloganContainer h1 {
+          font-family: "Avenir-Next-Demi-Bold";
+          font-size: 30px;
+          color: #FFFEFA;
+          width: 50%;
+          margin-right: 200px;
+          margin-left: auto;
+          line-height: 40px;
+          text-align: center; }
+      .home .entry-content .howWeHelpContainer {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 200px 1fr;
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; }
+        .home .entry-content .howWeHelpContainer h4 {
+          margin-right: 50px;
+          -ms-flex-item-align: center;
+              align-self: center; }
+        .home .entry-content .howWeHelpContainer .howWeHelpTitle {
+          -ms-flex-item-align: start;
+              align-self: start; }
+        .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer {
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr; }
+          .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer .howWeHelpBlock {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 1fr;
+            margin-bottom: 50px; }
+            .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer .howWeHelpBlock img {
+              grid-column: 1/2;
+              grid-row: 1/3;
+              width: 49px;
+              height: auto;
+              -ms-flex-item-align: center;
+                  align-self: center; }
+            .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer .howWeHelpBlock .howWeHelpDescr {
+              -ms-flex-item-align: center;
+                  align-self: center;
+              width: 75%;
+              margin-left: 30px; }
+              .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer .howWeHelpBlock .howWeHelpDescr h4 {
+                font-family: 'Avenir-Next-Medium';
+                font-size: 24px; }
+              .home .entry-content .howWeHelpContainer .howWeHelpIconsContainer .howWeHelpBlock .howWeHelpDescr p {
+                font-family: "Avenir-Next-Medium";
+                font-size: 16px;
+                line-height: 32px;
+                color: #5f5f5f; }
+      .home .entry-content .strong-view {
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0px;
+        background-color: #FBDEB3;
+        border-radius: 30px 0px 0px 30px;
+        margin-bottom: 100px;
+        height: 260px;
+        padding-top: 35px;
+        z-index: 1; }
+        .home .entry-content .strong-view .wpmslider-viewport {
+          margin-bottom: auto; }
+        .home .entry-content .strong-view .testimonial-content {
+          position: relative;
+          width: 80%; }
+          .home .entry-content .strong-view .testimonial-content p {
+            font-family: "Avenir-Next-Demi-Bold-Italic";
+            font-size: 19px;
+            line-height: 32px;
+            color: #414141; }
+          .home .entry-content .strong-view .testimonial-content:after, .home .entry-content .strong-view .testimonial-content:before {
+            quotes: '“' '”'; }
+          .home .entry-content .strong-view .testimonial-content:before {
+            position: absolute;
+            top: 15px;
+            color: #fc9f66;
+            content: '';
+            content: open-quote;
+            font-family: 'Yrsa';
+            font-size: 120px; }
+          .home .entry-content .strong-view .testimonial-content:after {
+            position: absolute;
+            top: 120px;
+            content: '';
+            content: close-quote;
+            color: #fc9f66;
+            font-family: 'Yrsa';
+            font-size: 120px; }
+        .home .entry-content .strong-view .testimonial-name,
+        .home .entry-content .strong-view .testimonial-company {
+          display: inline;
+          font-family: "Avenir-Next-Demi-Bold-Italic";
+          font-size: 19px;
+          line-height: 32px;
+          color: #414141; }
+        .home .entry-content .strong-view .testimonial-name:before {
+          content: '\2014 \2003';
+          font-family: serif; }
+        .home .entry-content .strong-view .testimonial-name:after {
+          content: ', '; }
+      .home .entry-content .whoWeServeContainer {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 200px 1fr;
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; }
+        .home .entry-content .whoWeServeContainer h4 {
+          margin-right: 50px;
+          -ms-flex-item-align: center;
+              align-self: center; }
+        .home .entry-content .whoWeServeContainer .whoText {
+          font-family: "Avenir-Next-Medium";
+          font-size: 16px;
+          line-height: 32px;
+          color: #5f5f5f; }
+      .home .entry-content .front_page_services_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 50%;
+        margin-left: auto;
+        margin-right: 10%;
+        margin-bottom: 100px;
+        justify-items: center;
+        grid-gap: 1rem; }
+        .home .entry-content .front_page_services_container img {
+          width: 460px;
+          height: auto;
+          border-radius: 20px; }
+        .home .entry-content .front_page_services_container .meta-services {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          width: 95%; }
+          .home .entry-content .front_page_services_container .meta-services p,
+          .home .entry-content .front_page_services_container .meta-services a {
+            font-family: "Avenir-Next-Bold";
+            font-size: 20px; }
+          .home .entry-content .front_page_services_container .meta-services p {
+            text-align: left; }
+          .home .entry-content .front_page_services_container .meta-services a {
+            justify-self: end; }
+      .home .entry-content .resourcesContainer {
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 200px 1fr;
+        width: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px; }
+        .home .entry-content .resourcesContainer h4 {
+          margin-right: 50px;
+          -ms-flex-item-align: center;
+              align-self: center; }
+        .home .entry-content .resourcesContainer .resourcesTitle {
+          -ms-flex-item-align: start;
+              align-self: start; }
+        .home .entry-content .resourcesContainer .front_page_resources_data {
+          display: grid;
+          grid-template-rows: 1fr 1fr 1fr 1fr; }
+          .home .entry-content .resourcesContainer .front_page_resources_data .front_page_resources {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: 1fr;
+            margin-bottom: 50px; }
+            .home .entry-content .resourcesContainer .front_page_resources_data .front_page_resources img {
+              grid-column: 1/2;
+              grid-row: 1/3;
+              width: 61px;
+              height: auto;
+              -ms-flex-item-align: center;
+                  align-self: center; }
+            .home .entry-content .resourcesContainer .front_page_resources_data .front_page_resources .resources_meta_text {
+              -ms-flex-item-align: center;
+                  align-self: center;
+              width: 75%;
+              margin-left: 30px; }
+              .home .entry-content .resourcesContainer .front_page_resources_data .front_page_resources .resources_meta_text h4 {
+                color: black;
+                font-family: 'Avenir-Next-Medium';
+                font-size: 24px; }
+              .home .entry-content .resourcesContainer .front_page_resources_data .front_page_resources .resources_meta_text p {
+                font-family: "Avenir-Next-Medium";
+                font-size: 16px;
+                line-height: 32px;
+                color: #5f5f5f; } }
 
 .bookACallContainer {
   background-color: #FFFCEE;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1732,6 +2098,11 @@ footer {
     width: 190px;
     height: 61px;
     margin-top: 0px; }
+  @media only screen and (min-width: 880px) {
+    .bookACallContainer {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr; } }
 
 .page-template-services .entry-header {
   display: -webkit-box;
@@ -1905,8 +2276,8 @@ footer {
     font-family: "Avenir-Next-Bold";
     font-size: 26px; }
   .single-services .entry-header .single-service-feat-img {
-    width: 950px;
-    height: 400px;
+    width: 85%;
+    height: auto;
     grid-column: 2 / 5;
     justify-self: center; }
     .single-services .entry-header .single-service-feat-img img {
@@ -1920,13 +2291,16 @@ footer {
 
 .single-services .entry-content {
   display: grid;
-  grid-template-columns: 15% 20% 35% 15% 15%;
+  grid-template-columns: 1fr;
   grid-row-gap: 2rem;
   width: 100%; }
   .single-services .entry-content .single-service-description {
-    grid-column: 2 / 4;
+    grid-column: 1 / 2;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
-    grid-row-gap: .5rem;
+    grid-row-gap: 0.5rem;
     line-height: normal; }
     .single-services .entry-content .single-service-description h4 {
       font-family: "Avenir-Next-Bold";
@@ -1942,7 +2316,9 @@ footer {
       .single-services .entry-content .single-service-description ul li {
         margin-bottom: 1rem; }
   .single-services .entry-content .ideal-for {
-    grid-column: 4 / 6;
+    grid-column: 1 / 2;
+    width: 90%;
+    margin-right: 0;
     background: #FEF5CC;
     border-radius: 52px 0 0 52px;
     padding-top: 2rem;
@@ -1964,6 +2340,78 @@ footer {
     grid-column: 2 / 4; }
     .single-services .entry-content .single-service-misc-image img {
       max-height: 400px; }
+
+@media only screen and (min-width: 880px) {
+  .single-services .site-main {
+    margin-top: 7rem; }
+  .single-services .entry-header {
+    display: grid;
+    grid-template-columns: 15% 20% 35% 15% 15%;
+    width: 100%; }
+    .single-services .entry-header h2 {
+      grid-column: 2 / 3;
+      margin-bottom: 3rem;
+      font-family: "Avenir-Next-Bold";
+      font-size: 26px; }
+    .single-services .entry-header .single-service-feat-img {
+      width: 950px;
+      height: 400px;
+      grid-column: 2 / 5;
+      justify-self: center; }
+      .single-services .entry-header .single-service-feat-img img {
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: 50% 50%;
+           object-position: 50% 50%;
+        height: inherit;
+        border-radius: 25px; }
+  .single-services .entry-content {
+    display: grid;
+    grid-template-columns: 15% 20% 35% 15% 15%;
+    grid-row-gap: 2rem;
+    width: 100%; }
+    .single-services .entry-content .single-service-description {
+      grid-column: 2 / 4;
+      display: grid;
+      grid-row-gap: 0.5rem;
+      line-height: normal; }
+      .single-services .entry-content .single-service-description h4 {
+        font-family: "Avenir-Next-Bold";
+        font-size: 20px; }
+      .single-services .entry-content .single-service-description p {
+        font-family: "Avenir-Next-Medium";
+        font-size: 16px; }
+      .single-services .entry-content .single-service-description ul {
+        margin-top: 1rem;
+        list-style-type: disc;
+        font-family: "Avenir-Next-Medium";
+        font-size: 16px; }
+        .single-services .entry-content .single-service-description ul li {
+          margin-bottom: 1rem; }
+    .single-services .entry-content .ideal-for {
+      grid-column: 4 / 6;
+      background: #FEF5CC;
+      border-radius: 52px 0 0 52px;
+      padding-top: 2rem;
+      padding-left: 5rem;
+      padding-bottom: 2rem; }
+      .single-services .entry-content .ideal-for h2 {
+        font-family: "Avenir-Next-Bold";
+        font-size: 20px; }
+      .single-services .entry-content .ideal-for ul {
+        margin-top: 1rem;
+        list-style-type: disc;
+        font-family: "Avenir-Next-Medium";
+        font-size: 16px; }
+        .single-services .entry-content .ideal-for ul li {
+          margin-bottom: 1rem; }
+    .single-services .entry-content iframe {
+      grid-column: 2 / 4; }
+    .single-services .entry-content .single-service-misc-image {
+      grid-column: 2 / 4; }
+      .single-services .entry-content .single-service-misc-image img {
+        max-height: 400px; } }
 
 .resourcesPage {
   top: 20px; }
@@ -2126,6 +2574,8 @@ iframe {
   text-align: center; }
 
 .single-speakers .site-content {
+  margin-top: 7rem;
+  margin-bottom: 3rem;
   width: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../../images/swm_logo_icon.png");
   background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/swm_logo_icon.png");
@@ -2134,7 +2584,7 @@ iframe {
   background-size: 25%; }
 
 .single-speakers .site-main {
-  margin-top: 10rem;
+  margin-top: 0;
   margin-bottom: 5rem; }
 
 .single-speakers .entry-content {
@@ -2149,21 +2599,25 @@ iframe {
 
 .single-speakers .single-speaker-info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: .5rem; }
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  grid-row-gap: 5px; }
   .single-speakers .single-speaker-info .single-speaker-job {
     font-size: 22px;
     font-family: "Avenir-Next-Demi-Bold";
     margin-bottom: 0;
-    grid-column: 1 / 2; }
+    grid-column: 1 / 2;
+    grid-row: 2/3; }
   .single-speakers .single-speaker-info .single-speaker-name {
     font-family: "Avenir-Next-Demi-Bold";
     font-size: 30px;
-    grid-column: 1 / 2; }
+    grid-column: 1 / 2;
+    grid-row: 1/2; }
   .single-speakers .single-speaker-info .single-speaker-additional-image {
-    width: 349px;
-    height: 546px;
-    grid-column: 1 / 2; }
+    width: 60%;
+    height: auto;
+    grid-column: 1 / 2;
+    justify-self: center; }
     .single-speakers .single-speaker-info .single-speaker-additional-image img {
       width: 100%;
       -o-object-fit: cover;
@@ -2175,11 +2629,68 @@ iframe {
   .single-speakers .single-speaker-info .single-speaker-bio {
     font-family: "Avenir-Next-Regular";
     font-size: 16px;
-    grid-column: 2 / 3;
-    line-height: 2rem; }
+    grid-column: 1 / 2;
+    line-height: 2rem;
+    text-align: justify; }
 
-.single-speakers .single-speaker-social .fab {
-  font-size: 3rem; }
+.single-speakers .single-speaker-social {
+  grid-row: 2/3;
+  justify-self: right; }
+  .single-speakers .single-speaker-social .fab {
+    font-size: 3rem; }
+
+@media only screen and (min-width: 880px) {
+  .single-speakers .site-content {
+    width: 100%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../../images/swm_logo_icon.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/swm_logo_icon.png");
+    background-position: 105% 0%;
+    background-repeat: no-repeat;
+    background-size: 25%; }
+  .single-speakers .site-main {
+    margin-top: 10rem;
+    margin-bottom: 5rem; }
+  .single-speakers .entry-content {
+    display: grid;
+    grid-row-gap: 1.5rem;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto; }
+  .single-speakers .single-speaker-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 0.5rem; }
+    .single-speakers .single-speaker-info .single-speaker-job {
+      font-size: 22px;
+      font-family: "Avenir-Next-Demi-Bold";
+      margin-bottom: 0;
+      grid-column: 1 / 2; }
+    .single-speakers .single-speaker-info .single-speaker-name {
+      font-family: "Avenir-Next-Demi-Bold";
+      font-size: 30px;
+      grid-column: 1 / 2; }
+    .single-speakers .single-speaker-info .single-speaker-additional-image {
+      width: 349px;
+      height: 546px;
+      grid-column: 1 / 2; }
+      .single-speakers .single-speaker-info .single-speaker-additional-image img {
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: 50% 50%;
+           object-position: 50% 50%;
+        height: inherit;
+        border-radius: 25px; }
+    .single-speakers .single-speaker-info .single-speaker-bio {
+      font-family: "Avenir-Next-Regular";
+      font-size: 16px;
+      grid-column: 2 / 3;
+      line-height: 2rem; }
+  .single-speakers .single-speaker-social .fab {
+    font-size: 3rem; } }
 
 .search-results .site-content {
   width: 100%; }
@@ -2211,9 +2722,9 @@ iframe {
   text-align: justify; }
 
 .post-type-archive-speakers .site-content {
-  margin-top: 10rem;
+  margin-top: 3rem;
   width: 100%;
-  margin-bottom: 5rem; }
+  margin-bottom: 3rem; }
 
 .post-type-archive-speakers .entry-header {
   display: -webkit-box;
@@ -2226,14 +2737,15 @@ iframe {
   background-position: 105% 0%;
   background-repeat: no-repeat;
   background-size: 25%;
-  margin-bottom: 10%; }
+  margin-bottom: 30px; }
   .post-type-archive-speakers .entry-header .has-large-font-size {
     font-family: "Avenir-Next-Bold";
     font-size: 50px;
-    width: 45%;
+    font-size: 40px;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: auto;
+    margin-top: 25px;
     margin-bottom: auto; }
 
 .post-type-archive-speakers .entry-content {
@@ -2249,13 +2761,15 @@ iframe {
     margin-bottom: 5rem; }
   .post-type-archive-speakers .entry-content .speaker {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 1rem;
-    margin-bottom: 3rem;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 0.3rem;
+    margin-bottom: 2rem;
     width: 100%; }
     .post-type-archive-speakers .entry-content .speaker p {
       margin-bottom: 0; }
     .post-type-archive-speakers .entry-content .speaker .speaker-image {
+      justify-self: center;
       grid-column: 1 /2;
       width: 240px;
       height: 300px; }
@@ -2269,7 +2783,9 @@ iframe {
         border-radius: 25px; }
     .post-type-archive-speakers .entry-content .speaker .speaker-info {
       display: grid;
-      grid-row-gap: .5rem;
+      text-align: center;
+      grid-template-rows: auto auto 1fr auto auto;
+      grid-row-gap: 0.5rem;
       width: 100%; }
       .post-type-archive-speakers .entry-content .speaker .speaker-info .speaker-name {
         grid-column: 2 /3;
@@ -2281,7 +2797,94 @@ iframe {
         font-size: 18px; }
       .post-type-archive-speakers .entry-content .speaker .speaker-info .speaker-bio {
         grid-column: 2 /3;
+        text-align: justify;
         font-family: "Avenir-Next-Regular";
         font-size: 16px; }
       .post-type-archive-speakers .entry-content .speaker .speaker-info a {
-        grid-column: 2 /3; }
+        text-align: right;
+        grid-column: 2 /3;
+        grid-row: 4/5; }
+      .post-type-archive-speakers .entry-content .speaker .speaker-info .speaker-social-linkedin {
+        text-align: left;
+        font-size: 2rem;
+        width: 2rem; }
+
+@media only screen and (min-width: 880px) {
+  .post-type-archive-speakers .site-content {
+    margin-top: 10rem;
+    width: 100%;
+    margin-bottom: 5rem; }
+  .post-type-archive-speakers .entry-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("../../images/swm_logo_icon.png");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../../images/swm_logo_icon.png");
+    background-position: 105% 0%;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    margin-bottom: 10%; }
+    .post-type-archive-speakers .entry-header .has-large-font-size {
+      font-family: "Avenir-Next-Bold";
+      font-size: 50px;
+      font-size: 50px;
+      width: 45%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      margin-bottom: auto; }
+  .post-type-archive-speakers .entry-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    justify-items: flex-start; }
+    .post-type-archive-speakers .entry-content h3 {
+      font-family: "Avenir-Next-Bold";
+      font-size: 26px;
+      margin-bottom: 5rem; }
+    .post-type-archive-speakers .entry-content .speaker {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 1rem;
+      margin-bottom: 3rem;
+      width: 100%; }
+      .post-type-archive-speakers .entry-content .speaker p {
+        margin-bottom: 0; }
+      .post-type-archive-speakers .entry-content .speaker .speaker-image {
+        justify-self: unset;
+        grid-column: 1 /2;
+        width: 240px;
+        height: 300px; }
+        .post-type-archive-speakers .entry-content .speaker .speaker-image img {
+          width: 100%;
+          -o-object-fit: cover;
+             object-fit: cover;
+          -o-object-position: 50% 50%;
+             object-position: 50% 50%;
+          height: inherit;
+          border-radius: 25px; }
+      .post-type-archive-speakers .entry-content .speaker .speaker-info {
+        display: grid;
+        text-align: unset;
+        grid-row-gap: 0.5rem;
+        width: 100%; }
+        .post-type-archive-speakers .entry-content .speaker .speaker-info .speaker-name {
+          grid-column: 2 /3;
+          font-family: "Avenir-Next-Demi-Bold";
+          font-size: 24px; }
+        .post-type-archive-speakers .entry-content .speaker .speaker-info .speaker-job {
+          grid-column: 2 /3;
+          font-family: "Avenir-Next-Demi-Bold";
+          font-size: 18px; }
+        .post-type-archive-speakers .entry-content .speaker .speaker-info .speaker-bio {
+          grid-column: 2 /3;
+          text-align: unset;
+          font-family: "Avenir-Next-Regular";
+          font-size: 16px; }
+        .post-type-archive-speakers .entry-content .speaker .speaker-info a {
+          grid-column: 2 /3; } }
