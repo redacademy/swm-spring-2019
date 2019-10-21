@@ -20,11 +20,11 @@ body {
 
 blockquote,
 q {
-  quotes: '' '';
+  quotes: "" "";
 
   &:before,
   &:after {
-    content: '';
+    content: "";
   }
 }
 
@@ -37,7 +37,7 @@ hr {
 
 //ul,
 //ol {
- // margin: 0 0 $base__space-unit ($base__space-unit * 2);
+// margin: 0 0 $base__space-unit ($base__space-unit * 2);
 //}
 
 ul {
@@ -45,13 +45,13 @@ ul {
 }
 
 ol {
-list-style: decimal;
+  list-style: decimal;
 }
 
 li > ul,
 li > ol {
   margin-bottom: 0;
- // margin-left: $base__space-unit;
+  // margin-left: $base__space-unit;
 }
 
 dt {
@@ -63,8 +63,8 @@ dd {
 }
 
 img {
-  height: auto; /* Make sure images are scaled correctly. */
-  max-width: 100%; /* Adhere to container width. */
+  // height: auto; /*Make sure images are scaled correctly. */
+  // max-width: 100%; /*Adhere to container width. */
 }
 
 table {

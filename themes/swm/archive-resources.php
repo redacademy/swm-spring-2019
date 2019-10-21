@@ -7,17 +7,17 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary resourcesPage" class="content-area">
     <main id="main" class="site-main" role="main">
-        <header class="entry-header">
+        <header class="entry-header resourcesMenu">
             <h3>Resources</h3>
 
-            <ul class="resourcesMenu">
-                <li>Featured</li>
-                <li>E-Book</li>
-                <li>Videos</li>
-                <li>Podcasts</li>
-                <li>Blog</li>
+            <ul class="resourcesMenuCategories">
+                <a class="menuFeatured" href=""><li>Featured</li></a>
+                <a class="menuEbook" href=""><li>E-Book</li></a>
+                <a class="menuVideos" href=""><li>Videos</li></a>
+                <a class="menuPodcasts" href=""><li>Podcasts</li></a>
+                <a class="menuBlog" href=""><li>Blog</li></a>
             </ul>
 
             <?php while (have_posts()) : the_post(); ?>
@@ -42,6 +42,7 @@ get_header(); ?>
                         )
                     )
                 );
+
                 $resources_video_featured_alternate_args = array(
                     'post_type' => 'resources',
                     'posts_per_page' => '1',
@@ -262,8 +263,8 @@ get_header(); ?>
                             )
                         )
                     );
-                    
                     ?>
+
                     <?php
                     $resources_podcast_query = new WP_Query($resources_podcast_args);
                     while ($resources_podcast_query->have_posts()) : $resources_podcast_query->the_post(); ?>
